@@ -117,11 +117,11 @@
 
 <div id = "container2">
     <div class = "box">
-        <div class = "select side">
+        <div class = "select side" id="male">
             <h1>Male</h1>
         </div>
 
-        <div class = "select side">
+        <div class = "select side"id="female">
             <h2>Female</h2>
         </div>
     </div>
@@ -157,11 +157,11 @@
     </div>
 </div>
 
-<div id = "container5">
+<div id = "container6">
     <div class = "box">
         <h1>Any other risk factors?</h1>
         <br>
-        <form class = "stalone">
+        <form class = "stalone" action="diag.php">
             <input class="nodeinput signUpColor" id="risk" type="text" name="Risks" placeholder="Risks">
         </form>
     </div>
