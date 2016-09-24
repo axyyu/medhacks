@@ -48,8 +48,8 @@
 	?>
 
 	<script type="text/javascript">
-
-		var userToken = <?php echo "'".$token."'" ?>;
+    /*
+		var userToken = ;
 		
         $(document).ready(function () {
             $("#symptomSelector").symptomSelector(
@@ -61,6 +61,7 @@
                 accessToken: userToken
             });
         });
+        */
     </script>
 
 	
