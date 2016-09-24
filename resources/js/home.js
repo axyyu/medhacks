@@ -1,8 +1,8 @@
 /**
  * Created by andre on 9/24/2016.
  */
-$(document).ready()
-{
+$(document).ready(function(){
+
     $("#container").hide();
 
     $("#container2").hide();
@@ -16,4 +16,4 @@ $(document).ready()
         $("#container2").show();
         $("#container").hide();
     });
-}
+});
