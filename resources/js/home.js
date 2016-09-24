@@ -5,7 +5,7 @@ $(document).ready()
 {
     $("#container").hide();
 
-    $("#container2").hide()
+    $("#container2").hide();
     $("#signup").click(function()
     {
         $("#container").show();
