@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="477077b8-6ea4-462d-8a56-41c0bc05c265" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/js/dscripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diag.php" afterPath="$PROJECT_DIR$/diag.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/scripts.js" afterPath="$PROJECT_DIR$/resources/js/scripts.js" />
     </list>
     <ignored path="medhacks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,17 +43,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="diag.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="diag.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/diag.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-287">
-              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+            <state relative-caret-position="223">
+              <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -121,11 +117,11 @@
         <option value="$PROJECT_DIR$/diag.html" />
         <option value="$PROJECT_DIR$/connect.html" />
         <option value="$PROJECT_DIR$/connect.php" />
-        <option value="$PROJECT_DIR$/diag.php" />
         <option value="$PROJECT_DIR$/resources/js/dscripts.js" />
         <option value="$PROJECT_DIR$/resources/css/mystyle.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/resources/js/scripts.js" />
+        <option value="$PROJECT_DIR$/diag.php" />
       </list>
     </option>
   </component>
@@ -308,12 +304,12 @@
       <workItem from="1474701512760" duration="2914000" />
       <workItem from="1474704545347" duration="904000" />
       <workItem from="1474705504480" duration="105000" />
-      <workItem from="1474718331126" duration="839000" />
+      <workItem from="1474718331126" duration="2173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16604000" />
+    <option name="totallyTimeSpent" value="17938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -585,14 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-287">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-202">
@@ -623,6 +611,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
           <folding />
         </state>
       </provider>

@@ -79,13 +79,35 @@
                     </ul>
                 </div>
                 <p id = "symp">Enter your symptom here:</p>
+                <form method="post">
                 <input class = "nodeinput" type="text" name="symptom">
+                    </form>
                 <br class="buttonbreak">
                 <button id = "plus">+</button>
             </div>
         </div>
     </div>
 </div>
+
+<?php
+    $symptom = $_POST['symptom'];
+    //$curl = curl_init("https://api.infermedica.com/v2/search?phrase=headache");
+
+    $curl = curl_init();
+    // Set some options - we are passing in a useragent too here
+    curl_setopt_array($curl, array(
+    CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_URL => 'https://api.infermedica.com/v2/search?phrase='.$symptom,
+    CURLOPT_USERAGENT => 'Test Request'
+    ));
+    // Send the request & save response to $resp
+    $resp = curl_exec($curl);
+    // Close request to clear up some resources
+    curl_close($curl);
+
+    echo "<p>".$resp."</p>";
+
+?>
 
 
 </body>
