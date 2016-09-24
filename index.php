@@ -7,9 +7,10 @@
     <script src="resources/js/scripts.js"></script>
     <script src="resources/js/bootstrap.js"></script>
     <script src="resources/js/npm.js"></script>
-    <link rel="stylesheet" type="text/css" href="resources/css/mystyle.css">
+
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/mystyle.css">
 
     <script>
         // Initialize Firebase
@@ -72,7 +73,7 @@
 <div class="box2">
     <img class = "logo" src="doxtal.png">
     <br>
-    <button class = "begin">Get Started</button>
+    <button class = "begin">Get Started</button> <!--make a purpose for this -->
 </div>
 
 

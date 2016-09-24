@@ -4,7 +4,7 @@
     <!-- Sources -->
     <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
     <script src="resources/js/jquery.js"></script>
-    <script src="resources/js/scripts.js"></script>
+    <script src="resources/js/dscripts.js"></script>
     <script src="resources/js/bootstrap.js"></script>
     <script src="resources/js/npm.js"></script>
     <link rel="stylesheet" type="text/css" href="resources/css/mystyle.css">
