@@ -116,6 +116,8 @@
     $cmd = 'curl -X GET --header \"Accept: application/json\" --header \"app_id: 88252933\" --header \"app_key: dd0c08c097535c3dfc37c8a18aa7e938\" \"https://api.infermedica.com/v2/symptoms\"';
     exec($cmd,$result);
 
+    echo $result;
+
 ?>
 
 
