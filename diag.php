@@ -113,10 +113,10 @@
     echo "<p>".$resp."</p>";
     */
     //$cmd='curl -v -H\'app_id: 88252933\' -H\'app_key: dd0c08c097535c3dfc37c8a18aa7e938\' https://api.infermedica.com/v2/info';
-    $cmd = 'curl -X GET --header \"Accept: application/json\" --header \"app_id: 88252933\" --header \"app_key: dd0c08c097535c3dfc37c8a18aa7e938\" \"https://api.infermedica.com/v2/symptoms\"';
+    $cmd = 'curl -X GET --header \"Accept: application/json\" --header \"app_id: 88252933\" --header \"app_key: dd0c08c097535c3dfc37c8a18aa7e938\" \"https://api.infermedica.com/v2/search?phrase='.$symptom.'\"';
     exec($cmd,$result);
 
-    echo $result;
+    print_r($result);
 
 ?>
 
