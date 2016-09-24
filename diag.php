@@ -6,7 +6,6 @@
     <script src="resources/js/jquery.js"></script>
     <script src="resources/js/dscripts.js"></script>
     <script src="resources/js/bootstrap.js"></script>
-    <script src="resources/js/npm.js"></script>
     <link rel="stylesheet" type="text/css" href="resources/css/mystyle.css">
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap-theme.css">
