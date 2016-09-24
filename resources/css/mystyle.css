@@ -262,7 +262,6 @@ body{
     background-color: #1b6d85;
     color:white;
 
-<<<<<<< HEAD
     width:200px;
     height: 200px;
     border-radius: 200px;
@@ -276,14 +275,10 @@ body{
     background-color: #1b6d85;
     color:white;
 
-    width:100px;
-    height: 100px;
-    border-radius: 100px;
-=======
     width:300px;
     height: 320px;
     border-radius: 300px;
->>>>>>> refs/remotes/origin/Edward
+
 
 }
 .box2

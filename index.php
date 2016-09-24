@@ -117,7 +117,7 @@
 
 
 <div id = "container2" style="display: none;">
-    <div class = "box" id="boxex">
+    <div class = "box">
         <div class = "select side" id="male">
             <h1>Male</h1>
         </div>
@@ -129,7 +129,7 @@
 </div>
 
 <div id = "container3" style="display: none;">
-    <div class = "boxu2" id="boxex">
+    <div class = "boxu2">
             <h1>Your age?</h1>
             <br>
         <form class = "stalone">
