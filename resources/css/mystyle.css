@@ -232,6 +232,15 @@ body{
     position: fixed;
     /*transform: translateX(-50%);*/
 }
+.boxex
+{
+    top:50%;
+    transform: translateY(-50%);
+    position: fixed;
+    text-align: center;
+    /*transform: translateX(-50%);*/
+
+}
 #centerfrac
 {
     display:flex;
