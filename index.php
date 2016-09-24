@@ -4,7 +4,7 @@
     <!-- Sources -->
     <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
     <script src="resources/js/jquery.js"></script>
-    <script src="resources/js/scripts.js"></script>
+    <script src="resources/js/home.js"></script>
     <script src="resources/js/bootstrap.js"></script>
 
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css">
@@ -22,22 +22,7 @@
         };
         firebase.initializeApp(config);
 
-        $(document).ready()
-        {
-            $("#container").hide();
 
-            $("#container2").hide()
-            $("#signup").click(function()
-            {
-                $("#container").show();
-                $(".box2").hide();
-            });
-            $("#continue").click(function()
-            {
-                $("#container2").show();
-                $("#container").hide();
-            });
-        }
     </script>
 </head>
 <body>
