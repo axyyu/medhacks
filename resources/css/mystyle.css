@@ -8,10 +8,20 @@
     text-align: center;
     min-height: 100px;
 }
+.header
+{
+    /*margin-right: 100px;*/
+    padding-right: 10px;
+    overflow: visible;
+}
+.navbar-nav
+{
+    padding-top: 1%;
+}
 .title
 {
     float: left;
-    color:white;
+    /*color:white;*/
 }
 #logo
 {
@@ -78,10 +88,42 @@ body{
     transform: translateY(-50%);
     text-align: center;
 }
-input
+.box3
+{
+    position: relative;
+    top:30%;
+    transform: translateY(-30%);
+    text-align: center;
+}
+.nodeinput
 {
     background-color: transparent;
     border-width: 2px;
     border: white;
     outline: 2px white solid;
+}
+.begin
+{
+    height: 10%;
+    width: 20%;
+    margin: 2%;
+    min-width: 100px;
+    opacity: .7;
+    background-color: white; /* Green */
+    border: blue;
+    border-width: thick;
+    border-width: 20px;
+    color: deepskyblue;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.logo
+{
+    height: 55%;
+    width: 60%;
+    min-height: 300px;
+    min-width: 500px;
+
 }
