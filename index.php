@@ -77,7 +77,7 @@
     <button class = "begin" id="signup">Get Started</button> <!--make a purpose for this -->
 </div>
 
-<div id = "container">
+<div id = "container" style="display: none;">
     <div class = "box">
         <div id = "centerfracup">
             <div class = "box2">
@@ -115,7 +115,7 @@
 </div>
 
 
-<div id = "container2">
+<div id = "container2" style="display: none;">
     <div class = "box">
         <div class = "select side" id="male">
             <h1>Male</h1>
@@ -127,7 +127,7 @@
     </div>
 </div>
 
-<div id = "container3">
+<div id = "container3" style="display: none;">
     <div class = "box">
             <h1>What is your age?</h1>
             <br>
@@ -137,7 +137,7 @@
     </div>
 </div>
 
-<div id = "container4">
+<div id = "container4" style="display: none;">
     <div class = "box">
         <h1>What is your weight?</h1>
         <br>
@@ -147,7 +147,7 @@
     </div>
 </div>
 
-<div id = "container5">
+<div id = "container5" style="display: none;">
     <div class = "box">
         <h1>Do you have any allergies? If so, to what?</h1>
         <br>
@@ -157,7 +157,7 @@
     </div>
 </div>
 
-<div id = "container6">
+<div id = "container6" style="display: none;">
     <div class = "box">
         <h1>Any other risk factors?</h1>
         <br>

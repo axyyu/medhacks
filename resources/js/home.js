@@ -1,12 +1,14 @@
 /**
  * Created by andre on 9/24/2016.
  */
+/*
 $("#container").hide();
 $("#container3").hide();
 $("#container4").hide();
 $("#container5").hide();
 $("#container6").hide();
 $("#container2").hide();
+*/
 $(document).ready(function(){
 
     $("#signup").click(function()
