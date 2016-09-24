@@ -72,13 +72,15 @@ body{
 }
 #centerfrac
 {
+    display:flex;
+    flex-direction: column;
     opacity:.75;
     background-color: #1b6d85;
     color:white;
 
     width:300px;
     height: 300px;
-    border-radius: 100px;
+    border-radius: 300px;
 
 }
 .box2
@@ -117,7 +119,6 @@ body{
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-
 }
 .logo
 {
@@ -125,5 +126,21 @@ body{
     width: 60%;
     min-height: 300px;
     min-width: 500px;
-
+}
+#plus
+{
+    width:50px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    color: deepskyblue;
+}
+.buttonbreak
+{
+    height: 15px;
+    display: block;
+    margin: 10px 0;
+    content: " ";
+    clear: both;
 }

@@ -52,39 +52,30 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Home</a></li>
                 <li><a href="diag.html">Diagnostic</a></li>
-                <li class="active"><a href="#">Connect</a></li>
+                <li><a href="connect.html">Connect</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">
-                    <form>
-                        <input type="text" name="username" placeholder="Username" required>
-                        <input type="password" name="password" placeholder="Password" required>
-                        <input type="submit" value="Login">
-                    </form>
-                </a></li>
+                        <form>
+                            <input type="text" name="username" placeholder="Username" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <input type="submit" value="Login">
+                        </form>
+                    </a></li>
             </ul>
         </div>
     </div>
 </div>
 
-<!--Important Part-->
-<div id = "container">
-    <div class = "box">
-        <div id = "centerfrac">
-            <div class = "box2">
-                <div id = "symplist">
-                    <ul>
-                    </ul>
-                </div>
-                <p id = "symp">Enter your symptom here:</p>
-                <input class = "nodeinput" type="text" name="symptom">
-
-            </div>
-        </div>
-    </div>
+<div class="box2">
+    <img class = "logo" src="doxtal.png">
+    <br>
+    <button class = "begin">Get Started</button>
 </div>
+
+
 
 
 </body>

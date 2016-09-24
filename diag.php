@@ -52,18 +52,18 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="diag.html">Diagnostic</a></li>
-                <li class="active"><a href="#">Connect</a></li>
+                <li ><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Diagnostic</a></li>
+                <li><a href="connect.html">Connect</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">
-                    <form>
-                        <input type="text" name="username" placeholder="Username" required>
-                        <input type="password" name="password" placeholder="Password" required>
-                        <input type="submit" value="Login">
-                    </form>
-                </a></li>
+                        <form>
+                            <input type="text" name="username" placeholder="Username" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <input type="submit" value="Login">
+                        </form>
+                    </a></li>
             </ul>
         </div>
     </div>
@@ -80,7 +80,8 @@
                 </div>
                 <p id = "symp">Enter your symptom here:</p>
                 <input class = "nodeinput" type="text" name="symptom">
-
+                <br class="buttonbreak">
+                <button id = "plus">+</button>
             </div>
         </div>
     </div>

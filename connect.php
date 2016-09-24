@@ -58,12 +58,12 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">
-                    <form>
-                        <input type="text" name="username" placeholder="Username" required>
-                        <input type="password" name="password" placeholder="Password" required>
-                        <input type="submit" value="Login">
-                    </form>
-                </a></li>
+                        <form>
+                            <input type="text" name="username" placeholder="Username" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <input type="submit" value="Login">
+                        </form>
+                    </a></li>
             </ul>
         </div>
     </div>
