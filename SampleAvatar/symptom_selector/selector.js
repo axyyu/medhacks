@@ -280,519 +280,70 @@ var mode = "diagnosis";
 
     }
 
-    function _ajaxGetSpecificResources() {
+    function _ajaxGetDiagnosis(symptoms, gender, year_of_birth) {
         $.ajax({
-            url: pathToWebservice + "/specificresources",
+            url: pathToWebservice + "/diagnosis",
             type: "GET",
             data:
-                {
-                    keys: JSON.stringify(keys),
-                    token: token,
-                    format: "json",
-                    language: language
-                },
-            async: false,
+            {
+                token: token,
+                format: "json",
+                language: language,
+                symptoms: JSON.stringify(symptoms),
+                gender: gender,
+                year_of_birth: year_of_birth,
+                platform: currentPlatform
+            },
             contentType: "application/json; charset=utf-8",
             cache: false,
             dataType: "jsonp",
-            jsonp: "callback",
-            jsonpCallback: "_setSpecificResourcesCallback",
-            success: function (responseData) { _setSpecificResourcesCallback(responseData); },
+            jsonpCallback: "_addDiagnosisCallback",
+            success: function (responseData) { _addDiagnosisCallback(responseData); },
             beforeSend: function (jqXHR, settings) {
+                _loader.show();
             },
             error: function (xhr, ajaxOptions, thrownError) {
                 if (window.console)
                     console.log(xhr.responseText);
             },
             complete: function () {
+                _loader.hide();
             }
         });
     }
 
-    //////////////////ajax calls end//////////////////////////////////////
-
-    //////////////////private functions//////////////////////////////////////////
-    function _setUpSelector() {
-        _selectedSelectorStatus = getCookie("selectedSelectorStatus") !== "" ? getCookie("selectedSelectorStatus") : selectorStatus.Man;
-        _selectedBodyPart = getCookie("selectedBodyPart") !== "" ? parseInt(getCookie("selectedBodyPart")) : "";
-        //_selectedBodyPart = "";
-        _selectedGender = getCookie("selectedGender") !== "" ? getCookie("selectedGender") : Gender.Male;
-        _selectedYear = getCookie("selectedYear") !== "" ? parseInt(getCookie("selectedYear")) : _defaultAdultYear;
-
-        _createSelectorHeader();
-        _createSelectorTable();
-        _createImageMaps();
-
-        var avatarOptions = new Object();
-        avatarOptions.LocationId = _selectedBodyPart;
-        avatarOptions.SelectorStatus = _selectedSelectorStatus;
-        avatarOptions.Gender = _selectedGender;
-        avatarOptions.YearOfBirth = _selectedYear;
-        _ajaxGetSymptoms(true);
-        _symptomList = $("#" + symptomListId).symptomList(avatarOptions);
-        _symptomList.symptomList("LoadBodyLocations", avatarOptions);
-        _highlightBodyParts();
+    function _ajaxLoadProposedSymptoms(symptoms, gender, year_of_birth) {
+        $.ajax({
+            url: pathToWebservice + "/symptoms/proposed",
+            type: "GET",
+            async: true,
+            data:
+            {
+                token: token,
+                format: "json",
+                language: language,
+                symptoms: JSON.stringify(symptoms),
+                gender: gender,
+                year_of_birth: year_of_birth,
+                platform: currentPlatform
+            },
+            contentType: "application/json; charset=utf-8",
+            cache: false,
+            dataType: "jsonp",
+            jsonpCallback: "_addProposedSymptomsCallback",
+            success: function (responseData) { _addProposedSymptomsCallback(responseData); },
+            beforeSend: function (jqXHR, settings) {
+                $('#loader').show();
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                if (window.console)
+                    console.log(xhr.responseText);
+            },
+            complete: function () {
+                $('#loader').hide();
+            }
+        });
     }
-
-    function _createSelectorTable() {
-        var selectorTable = jQuery("<table/>", {
-        });
-
-        var selectorTableRow = jQuery("<tr/>", {
-        });
-
-        var statusContainer = _createChangeStatusContainer();
-
-        var avatarContainer = _createAvatarContainer();
-
-        selectorTableRow.append(statusContainer);
-        selectorTableRow.append(avatarContainer);
-
-        selectorTable.append(selectorTableRow);
-
-        _markSelectedStatus(_selectedSelectorStatus);
-
-        _plugin.append(selectorTable);
-
-        if (_selectedSelectorStatus == selectorStatus.Boy || _selectedSelectorStatus == selectorStatus.Girl) {
-            _createChildGenderSelector();
-        }
-    }
-    function _createChangeStatusContainer() {
-        var statusContainer = jQuery("<td/>", {
-            "class": "status-container"
-        });
-
-        this._manAvatarSmall = _createStatusChangeLink(selectorStatus.Man);
-        this._womanAvatarSmall = _createStatusChangeLink(selectorStatus.Woman);
-        //TODO: ADD girl avatar
-        this._childAvatarSmall = _createStatusChangeLink(selectorStatus.Boy);
-
-        statusContainer.append(this._manAvatarSmall);
-        statusContainer.append(this._womanAvatarSmall);
-        statusContainer.append(this._childAvatarSmall);
-
-        return statusContainer;
-    }
-
-    function _createAvatarContainer() {
-        var avatarContainer = jQuery("<td/>", {
-            "class": "avatar-container"
-        });
-
-        return avatarContainer;
-    }
-
-    function _createImageMaps() {
-        _addImages();
-        _createManMap();
-        _createWomanMap();
-        _createChildMap();
-        _createSkinLink();
-    }
-
-    function _addImages() {
-        this._manAvatar = jQuery("<img/>", {
-            id: "manImg",
-            src: pathToImages + "/male.png",
-            usemap: "#manMap"
-        });
-
-        this._womanAvatar = jQuery("<img/>", {
-            id: "womanImage",
-            src: pathToImages + "/female.png",
-            usemap: "#womanMap"
-        });
-
-        this._childAvatar = jQuery("<img/>", {
-            id: "childImage",
-            src: pathToImages + "/child.png",
-            usemap: "#childMap"
-        });
-
-        switch (_selectedSelectorStatus) {
-            case (selectorStatus.Man):
-                this._womanAvatar.hide();
-                this._childAvatar.hide();
-                break;
-            case (selectorStatus.Woman):
-                this._manAvatar.hide();
-                this._childAvatar.hide();
-                break;
-            case (selectorStatus.Boy):
-                this._manAvatar.hide();
-                this._womanAvatar.hide();
-                break;
-            case (selectorStatus.Girl):
-                this._manAvatar.hide();
-                this._womanAvatar.hide();
-                break;
-        }
-
-        _plugin.find(".avatar-container").append(this._manAvatar);
-        _plugin.find(".avatar-container").append(this._womanAvatar);
-        _plugin.find(".avatar-container").append(this._childAvatar);
-    }
-
-    function _createManMap() {
-        var manMap = jQuery("<map/>", {
-            id: "manMap",
-            name: "manMap"
-        });
-
-        var area1 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "152,3, 150,1, 134,5, 123,12, 116,26, 114,41, 111,52, 114,64, 120,77, 124,86, 126,98, 123,110, 183,110, 179,98, 181,87, 183,75, 189,66, 195,59, 193,51, 191,46, 187,39, 186,31, 186,25, 181,17, 177,12, 171,6, 161,1, 154,1",
-            accesskey: "0",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Head); }
-        });
-
-        var area2 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "122,109, 119,106, 109,115, 97,121, 86,123, 79,126, 75,127, 75,182, 75,202, 76,213, 78,227, 79,237, 82,252, 84,258, 86,268, 221,268, 230,233, 233,213, 233,187, 233,175, 233,160, 233,126, 229,124, 204,117, 189,110, 117,110",
-            accesskey: "1",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Chest); }
-        });
-
-        var area3 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "85,268, 91,303, 90,319, 87,342, 84,363, 83,380, 80,400, 79,411, 79,420, 80,433, 231,433, 231,398, 229,375, 224,340, 222,316, 220,287, 221,268, 84,268",
-            accesskey: "2",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Hips); }
-        });
-
-        var area4 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "80,433, 78,433, 80,453, 84,481, 85,505, 84,532, 80,559, 77,585, 79,612, 83,653, 85,691, 85,716, 79,734, 76,753, 85,764, 99,767, 111,766, 120,762, 126,754, 125,741, 123,725, 121,707, 116,671, 117,647, 126,626, 127,606, 127,590, 124,577, 124,567, 135,524, 141,489, 146,466, 150,450, 153,438, 158,441, 166,468, 172,505, 181,547, 186,569, 182,592, 183,612, 188,639, 191,659, 188,704, 186,738, 185,754, 190,767, 207,767, 224,762, 232,753, 232,742, 227,730, 222,720, 223,705, 221,685, 221,677, 225,653, 230,622, 232,599, 231,567, 228,538, 228,511, 230,488, 232,467, 231,447, 231,433, 79,433",
-            accesskey: "3",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Legs); }
-        });
-
-        var area5 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "51,130, 33,146, 25,170, 25,187, 26,222, 24,239, 27,265, 22,283, 20,301, 21,316, 22,326, 16,338, 8,354, 6,363, 1,376, 6,380, 14,369, 23,382, 26,401, 34,414, 47,411, 50,405, 52,396, 56,392, 60,378, 59,360, 55,347, 53,337, 54,324, 59,303, 65,288, 66,270, 65,253, 65,249, 75,236, 75,221, 75,124, 53,129, 233,126, 262,136, 274,152, 280,174, 279,194, 282,221, 286,253, 283,286, 285,312, 288,340, 297,348, 301,362, 307,374, 305,378, 298,373, 293,366, 288,383, 282,403, 273,413, 266,411, 261,404, 258,397, 254,394, 250,375, 248,357, 250,349, 251,344, 255,333, 255,326, 250,300, 246,276, 244,255, 233,242, 233,237, 233,125",
-            accesskey: "4",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Arms); }
-        });
-
-        manMap.append(area1);
-        manMap.append(area2);
-        manMap.append(area3);
-        manMap.append(area4);
-        manMap.append(area5);
-
-        _plugin.find(".avatar-container").append(manMap);
-    }
-
-    function _createWomanMap() {
-        var womanMap = jQuery("<map/>", {
-            id: "womanMap",
-            name: "womanMap"
-        });
-
-        var area1 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "150,1, 124,8, 115,17, 110,36, 104,54, 98,71, 96,85, 98,102, 107,119, 118,130, 122,138, 185,138, 189,135, 187,132, 189,125, 201,113, 207,95, 208,76, 205,65, 201,52, 199,33, 195,24, 185,11, 168,3, 153,1",
-            accesskey: "0",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Head); }
-        });
-
-        var area2 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "121,139, 105,139, 95,187, 89,208, 90,220, 96,227, 103,235, 105,245, 204,245, 206,236, 211,226, 218,217, 221,209, 219,194, 201,142, 188,139, 120,139",
-            accesskey: "1",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Chest); }
-        });
-
-        var area3 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "104,244, 106,270, 108,292, 103,311, 97,329, 92,346, 90,359, 90,375, 91,386, 222,386, 223,365, 220,348, 217,329, 211,315, 208,300, 203,287, 203,277, 204,260, 205,244, 103,244",
-            accesskey: "2",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Hips); }
-        });
-
-        var area4 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "91,386, 94,437, 101,489, 109,532, 105,554, 99,577, 98,595, 102,621, 112,664, 116,704, 105,729, 96,742, 94,752, 104,760, 121,764, 133,762, 139,755, 143,747, 143,735, 138,714, 140,662, 144,626, 146,596, 141,559, 140,545, 142,513, 145,482, 148,447, 150,410, 147,397, 151,392, 157,396, 159,423, 160,463, 163,505, 167,537, 165,565, 159,594, 162,625, 166,652, 168,687, 166,714, 163,735, 162,752, 169,761, 185,765, 204,760, 213,747, 211,738, 205,732, 195,715, 191,695, 192,674, 197,653, 203,630, 209,607, 211,585, 207,568, 202,556, 200,540, 199,523, 205,501, 211,475, 215,456, 221,426, 221,405, 222,386, 94,386",
-            accesskey: "3",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Legs); }
-        });
-
-        var area5 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "106,141, 84,141, 68,148, 60,163, 56,184, 53,227, 49,264, 47,289, 38,316, 28,344, 13,361, 3,368, 3,374, 13,375, 7,390, 8,400, 15,407, 33,403, 41,388, 46,374, 46,361, 53,344, 64,323, 74,298, 80,275, 83,247, 85,217, 93,194, 106,141, 205,141, 224,141, 234,148, 251,169, 256,189, 259,217, 263,245, 269,267, 276,293, 279,326, 283,346, 295,359, 304,370, 301,375, 293,374, 300,386, 302,396, 296,404, 287,407, 276,404, 270,393, 266,380, 262,364, 263,351, 258,335, 249,315, 244,294, 237,267, 233,241, 226,213, 200,141",
-            accesskey: "4",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Arms); }
-        });
-
-        womanMap.append(area1);
-        womanMap.append(area2);
-        womanMap.append(area3);
-        womanMap.append(area4);
-        womanMap.append(area5);
-
-        _plugin.find(".avatar-container").append(womanMap);
-    }
-
-    function _createChildMap() {
-        var childMap = jQuery("<map/>", {
-            id: "childMap",
-            name: "childMap"
-        });
-
-        var area1 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "125,1, 89,12, 78,32, 75,63, 79,92, 91,115, 101,128, 96,152, 160,152, 154,129, 169,111, 177,91, 182,61, 180,33, 168,13, 147,4, 128,2",
-            accesskey: "0",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Head); }
-        });
-
-        var area2 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "94,147, 92,147, 70,153, 56,158, 56,263, 59,286, 62,307, 196,307, 204,266, 199,161, 163,152, 94,152",
-            accesskey: "1",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Chest); }
-        });
-
-        var area3 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "60,307, 59,343, 58,376, 61,439, 192,439, 197,399, 199,362, 197,329, 197,307, 66,307",
-            accesskey: "2",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Hips); }
-        });
-
-        var area4 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "61,439, 61,474, 66,531, 65,569, 69,613, 74,651, 78,693, 75,716, 56,746, 57,756, 73,762, 89,764, 102,758, 111,744, 114,730, 113,720, 110,706, 113,676, 117,643, 121,598, 119,568, 121,539, 123,511, 125,475, 127,440, 131,511, 132,559, 133,597, 135,627, 139,660, 147,701, 144,733, 150,751, 164,761, 183,764, 202,757, 202,749, 195,737, 184,714, 179,688, 184,651, 188,610, 189,581, 187,556, 186,526, 189,489, 191,458, 193,439, 64,439",
-            accesskey: "3",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Legs); }
-        });
-
-        var area5 = jQuery("<area/>", {
-            shape: "poly",
-            coords: "56,158, 34,175, 27,193, 21,216, 18,246, 16,276, 11,300, 6,329, 6,356, 7,389, 9,415, 10,437, 12,450, 18,459, 34,465, 43,463, 46,445, 47,432, 46,419, 40,407, 38,387, 41,356, 46,323, 46,305, 48,281, 56,264, 56,158, 199,162, 218,173, 229,196, 236,235, 243,290, 252,324, 251,349, 249,382, 252,412, 250,448, 234,464, 221,465, 214,449, 212,432, 216,415, 221,401, 223,380, 217,348, 215,321, 211,299, 204,273, 199,162",
-            accesskey: "4",
-            href: "javascript:void(0)",
-            click: function () { _selectBodyPart(SymptomsLocations.Arms); }
-        });
-
-        childMap.append(area1);
-        childMap.append(area2);
-        childMap.append(area3);
-        childMap.append(area4);
-        childMap.append(area5);
-
-        _plugin.find(".avatar-container").append(childMap);
-    }
-
-    function _createStatusChangeLink(selectedStatus) {
-        var imgSrc;
-        switch (selectedStatus) {
-            case selectorStatus.Man:
-                imgSrc = pathToImages + "/male_small.png";
-                break;
-            case selectorStatus.Woman:
-                imgSrc = pathToImages + "/female_small.png";
-                break;
-            case selectorStatus.Boy:
-                imgSrc = pathToImages + "/child_small.png";
-                break;
-            case selectorStatus.Girl:
-                imgSrc = pathToImages + "/child_small.png";
-                break;
-        }
-
-        var statusLink = jQuery("<a/>", {
-            "class": "status-change-link",
-            href: "javascript:void(0)",
-            click: function () { _setSelectorStatus(selectedStatus); }
-        });
-
-        var statusLinkImg = jQuery("<img/>", {
-            src: imgSrc
-        });
-
-        statusLink.append(statusLinkImg);
-
-        return statusLink;
-    }
-
-    function _createSkinLink() {
-        var skinLink = jQuery("<a/>", {
-            "class": "skin-link",
-            href: "javascript:void(0)",
-            //text: skinText,
-            click: function () { _selectBodyPart(SymptomsLocations.Skin); }
-        });
-
-        var skin_Text = jQuery("<span/>", {
-            text: skinText
-        });
-
-        var skinImage = jQuery("<img/>", {
-            id: "skinImg",
-            "class": "skin-image",
-            src: pathToImages + "/skin-joint-general-bw-hellgrau-small.png",
-            alt: skinText
-        });
-
-        skinLink.hover(
-        function () {
-            $(this).find(".skin-image").attr("src", pathToImages + "/skin-joint-general-bw-hellgrau-smallhover.png");
-        },
-        function () {
-            $(this).find(".skin-image").attr("src", pathToImages + "/skin-joint-general-bw-hellgrau-small.png");
-        });
-
-        skinLink.append(skinImage);
-        skinLink.append(skin_Text);
-
-        _plugin.find(".avatar-container").append(skinLink);
-    }
-
-    function _createChildAvatarSmallMale() {
-        var male = jQuery("<a/>", {
-            id: "btnMale",
-            href: "javascript:void(0)",
-            "class": "child-gender-selector"
-        });
-
-        var maleIcon = jQuery("<i/>", {
-            "class": "fa fa-male"
-        });
-
-        var checkIconChecked = jQuery("<i/>", {
-            "class": "fa fa-check-square-o"
-        });
-
-        var checkIconUnchecked = jQuery("<i/>", {
-            "class": "fa fa-square-o"
-        });
-
-        if (_selectedGender == Gender.Male)
-            male.append(checkIconChecked);
-        else
-            male.append(checkIconUnchecked);
-
-        male.append(maleIcon);
-
-        male.bind('click', function () {
-            $(this).addClass("disabled");
-            $(this).find(".fa-square-o").addClass("fa-check-square-o");
-            $(this).find(".fa-square-o").removeClass("fa-square-o");
-            $("#btnFemale").find(".fa-check-square-o").addClass("fa-square-o");
-            $("#btnFemale").find(".fa-check-square-o").removeClass("fa-check-square-o")
-            $("#btnFemale").removeClass("disabled");
-            _setSelectedGender(Gender.Male);
-            _setSelectorStatus(selectorStatus.Boy);
-        });
-
-        return male;
-    }
-
-    function _createChildAvatarSmallFemale() {
-        var female = jQuery("<a/>", {
-            id: "btnFemale",
-            href: "javascript:void(0)",
-            "class": "child-gender-selector"
-        });
-
-        var femaleIcon = jQuery("<i/>", {
-            "class": "fa fa-female"
-        });
-
-        var checkIconChecked = jQuery("<i/>", {
-            "class": "fa fa-check-square-o"
-        });
-
-        var checkIconUnchecked = jQuery("<i/>", {
-            "class": "fa fa-square-o"
-        });
-
-        if (_selectedGender == Gender.Female)
-            female.append(checkIconChecked);
-        else
-            female.append(checkIconUnchecked);
-
-        female.append(femaleIcon);
-
-        female.bind('click', function () {
-            $(this).addClass("disabled");
-            $(this).find(".fa-square-o").addClass("fa-check-square-o");
-            $(this).find(".fa-square-o").removeClass("fa-square-o");
-            $("#btnMale").find(".fa-check-square-o").addClass("fa-square-o");
-            $("#btnMale").find(".fa-check-square-o").removeClass("fa-check-square-o");
-            $("#btnMale").removeClass("disabled");
-            _setSelectedGender(Gender.Female);
-            _setSelectorStatus(selectorStatus.Girl);
-        });
-
-        return female;
-    }
-
-    function _createChildGenderSelector() {
-        var childGenderSelectorContainer = jQuery("<div/>", {
-            "class": "child-gender-selector-container"
-        });
-
-        var childAvatarSmallMale = _createChildAvatarSmallMale();
-        var childAvatarSmallFemale = _createChildAvatarSmallFemale();
-
-        childGenderSelectorContainer.append(childAvatarSmallMale);
-        childGenderSelectorContainer.append(childAvatarSmallFemale);
-
-        _plugin.find(".status-container").append(childGenderSelectorContainer);
-    }
-
-    function _removeChildGenderSelector() {
-        _plugin.find(".child-gender-selector-container").remove();
-    }
-
-    function _createSelectorHeader() {
-        SetTranslationResources();
-        var header = jQuery("<div/>", {
-        });
-
-        var searchField = _createSearchField();
-        this._yearSelector = _createYearsField();
-
-        var yearContainer = jQuery("<div/>", {
-            "class": "year-container"
-        });
-
-        var yearIcon = jQuery("<i/>", {
-            "class": "fa fa-calendar"
-        });
-
-        var yearText = jQuery("<span/>", {
-            "class": "year-text",
-            "text": bornOnText
-        });
-
-        yearContainer.append(yearIcon);
-        yearContainer.append(yearText);
-        yearContainer.append(this._yearSelector);
-
-        header.append(searchField);
-        header.append(yearContainer);
-
-        _plugin.append(header);
-    }
-
     function _createSearchField() {
         var searchField = jQuery("<input/>", {
             "id": "txtSearchSymptoms",
@@ -2159,37 +1710,7 @@ var mode = "diagnosis";
 
     //////////////////ajax calls//////////////////////////////////////////
 
-    function _ajaxGetDiagnosis(symptoms, gender, year_of_birth) {
-        $.ajax({
-            url: pathToWebservice + "/diagnosis",
-            type: "GET",
-            data:
-                {
-                    token: token,
-                    format: "json",
-                    language: language,
-                    symptoms: JSON.stringify(symptoms),
-                    gender: gender,
-                    year_of_birth: year_of_birth,
-                    platform: currentPlatform
-                },
-            contentType: "application/json; charset=utf-8",
-            cache: false,
-            dataType: "jsonp",
-            jsonpCallback: "_addDiagnosisCallback",
-            success: function (responseData) { _addDiagnosisCallback(responseData); },
-            beforeSend: function (jqXHR, settings) {
-                _loader.show();
-            },
-            error: function (xhr, ajaxOptions, thrownError) {
-                if (window.console)
-                    console.log(xhr.responseText);
-            },
-            complete: function () {
-                _loader.hide();
-            }
-        });
-    }
+
 
     function _ajaxGetIssueInfo(issueId) {
         $.ajax({

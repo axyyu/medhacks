@@ -28,7 +28,14 @@
     <script src="libs/json2.js"></script><!-- json for ie7 -->
     <script src="libs/jquery.imagemapster.min.js?v=1.1"></script>
     <script src="libs/typeahead.bundle.js"></script>
-    
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <script src="resources/js/jquery.js"></script>
+    <script src="resources/js/scripts.js"></script>
+    <script src="resources/js/bootstrap.js"></script>
+    <script src="resources/js/npm.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap-theme.css">
     <script src="symptom_selector/selector.js?v=3.3"></script>
 
 	<?php 

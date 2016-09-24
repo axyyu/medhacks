@@ -72,13 +72,13 @@
 <!--Important Part-->
 <div id = "container">
     <div class = "box">
-        <div id = "centerfrac">
+        <div id = "centerfrac" class = "frac">
             <div class = "box2">
                 <div id = "symplist">
                     <ul>
                     </ul>
                 </div>
-                <p id = "symp">Enter your symptom here:</p>
+                <p id = "symp">Body</p>
                 <input class = "nodeinput" type="text" name="symptom">
 
             </div>
