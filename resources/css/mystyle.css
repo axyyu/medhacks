@@ -63,17 +63,179 @@ body{
 }
 .box
 {
-    top:50%;
+    position: relative;
+    top:52%;
     transform: translateY(-50%);
     left:42.5%;
     position: fixed;
-    text-align: center;
+    /*transform: translateX(-50%);*/
+}
+.disease1
+{
+    position: relative;
+    top:52%;
+    transform: translateY(-50%);
+    left:20%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.disease2
+{
+    position: relative;
+    top:52%;
+    transform: translateY(-50%);
+    left:73%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact3
+{
+    position: relative;
+    top:43%;
+    transform: translateY(-50%);
+    left:89%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact4
+{
+    position: relative;
+    top:61%;
+    transform: translateY(-50%);
+    left:89%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.disease3
+{
+    position: relative;
+    top:24%;
+    transform: translateY(-50%);
+    left:60%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact5
+{
+    position: relative;
+    top:20%;
+    transform: translateY(-50%);
+    left:51%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact6
+{
+    position: relative;
+    top:26%;
+    transform: translateY(-50%);
+    left:77%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.disease4
+{
+    position: relative;
+    top:80%;
+    transform: translateY(-50%);
+    left:33%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact9
+{
+    position: relative;
+    top:78%;
+    transform: translateY(-50%);
+    left:24%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact10
+{
+    position: relative;
+    top:84%;
+    transform: translateY(-50%);
+    left:50%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.disease5
+{
+    position: relative;
+    top:24%;
+    transform: translateY(-50%);
+    left:33%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact7
+{
+    position: relative;
+    top:26%;
+    transform: translateY(-50%);
+    left:24%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact8
+{
+    position: relative;
+    top:20%;
+    transform: translateY(-50%);
+    left:50%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.disease6
+{
+    position: relative;
+    top:80%;
+    transform: translateY(-50%);
+    left:60%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact11
+{
+    position: relative;
+    top:84%;
+    transform: translateY(-50%);
+    left:51%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact12
+{
+    position: relative;
+    top:78%;
+    transform: translateY(-50%);
+    left:77%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact1
+{
+    position: relative;
+    top:43%;
+    transform: translateY(-50%);
+    left:12%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact2
+{
+    position: relative;
+    top:61%;
+    transform: translateY(-50%);
+    left:12%;
+    position: fixed;
     /*transform: translateX(-50%);*/
 }
 #centerfrac
 {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     opacity:.75;
     background-color: #1b6d85;
     color:white;
@@ -83,23 +245,42 @@ body{
     border-radius: 300px;
 
 }
-#centerfracup
+#frac2
 {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     opacity:.75;
     background-color: #1b6d85;
     color:white;
 
-    width:300px;
-    height: 400px;
-    border-radius: 300px;
+    width:200px;
+    height: 200px;
+    border-radius: 200px;
+
+}
+#frac3
+{
+    display:flex;
+    flex-direction: column;
+    opacity:.75;
+    background-color: #1b6d85;
+    color:white;
+
+    width:100px;
+    height: 100px;
+    border-radius: 100px;
 
 }
 .box2
 {
     position: relative;
-    width: 100%;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.dname1
+{
+    position: relative;
     top:50%;
     transform: translateY(-50%);
     text-align: center;
@@ -117,7 +298,6 @@ body{
     border-width: 2px;
     border: white;
     outline: 2px white solid;
-
 }
 .begin
 {
@@ -159,16 +339,8 @@ body{
     content: " ";
     clear: both;
 }
-.buttonbreak
-{
-    height: 15px;
-    display: block;
-    margin: 10px 0;
-    content: " ";
-    clear: both;
-}
 .signUp{
-    color: white;
+color: #046bbf; 
 }
 .signUpColor::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: white;

@@ -21,17 +21,7 @@
                 messagingSenderId: "267096838240"
             };
             firebase.initializeApp(config);
-
-            //Check if pass and confirm pass match
-            function check(input) {
-                if (input.value != document.getElementById('password').value) {
-                    input.setCustomValidity('Password Must be Matching.');
-                } else {
-            // input is valid -- reset the error message
-            input.setCustomValidity('');
-        }
-    }
-</script>
+        </script>
     </head>
     <body>
     <!--
@@ -79,42 +69,13 @@
         </div>
     </div>
 
-    <div id = "container">
-        <div class = "box">
-            <div id = "centerfrac">
-                <div class = "box2">
-                    <div id = "symplist">
-                        <ul>
-                        </ul>
-                    </div>
-                    <h1 style="font-size:22px">Sign Up</h1>
-                    Account Type<br>
-                    <form class="signUp">
-                        <!-- Account Type<br> -->
-                        <select class="selectText" id="type">
-                            <option>Patient</option>
-                            <option>Doctor</option>
-                        </select><br>
-                        <label>
-                        <input class="nodeinput signUpColor" type="text" name="user" placeholder="Username" required><br>
-                        </label>
-                        <label>
-                        <input class="nodeinput signUpColor" type="password" name="password" placeholder="Password" required><br>
-                        </label>
-                        <label>
-                        <input class="nodeinput signUpColor" type="password" name="confirm" placeholder="Confirm Password" oninput="check(this)" required=""><br>
-                        </label>
-                        <label>
-                        <input class="nodeinput signUpColor" type="email" name="email" placeholder="Email" required><br>
-                        </label><br>
-                        <label>
-                        <input class="nodeinput signUpColor" type="submit" value="Next ">
-                        </label>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <div class="box2">
+        <img class = "logo" src="doxtal.png">
+        <br>
+        <button class = "begin">Get Started</button>
     </div>
+
+
 
 
     </body>
