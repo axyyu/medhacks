@@ -71,7 +71,7 @@
     </div>
 </div>
 
-<div class="box2">
+<div class="box2" id="boxx2">
     <img class = "logo" src="doxtal.png">
     <br>
     <button class = "begin" id="signup">Get Started</button> <!--make a purpose for this -->

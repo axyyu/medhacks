@@ -9,7 +9,7 @@ $(document).ready(function(){
     $("#signup").click(function()
     {
         $("#container").show();
-        $(".box2").hide();
+        $(".boxx2").hide();
     });
     $("#continue").click(function()
     {
