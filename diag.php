@@ -90,6 +90,7 @@
 </div>
 
 <?php
+    echo "THIS IS A TEST";
     $symptom = $_POST['symptom'];
     //$curl = curl_init("https://api.infermedica.com/v2/search?phrase=headache");
 
