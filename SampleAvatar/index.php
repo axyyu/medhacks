@@ -67,6 +67,59 @@
 </head>
 <body>
 
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <h1 class = "title">doxtal.</h1>
+        <h1 class = "title"><b>me</b></h1> <!--FIX THIS-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="#">Doxtal<</a> -->
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li ><a href="index.php">Home</a></li>
+                <li class="active"><a href="#">Diagnostic</a></li>
+                <li><a href="connect.php">Connect</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">
+                        <form>
+                            <input type="text" name="username" placeholder="Username" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <input type="submit" value="Login">
+                        </form>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Important Part-->
+<div id = "container">
+    <div class = "box">
+        <div id = "centerfrac">
+            <div class = "box2">
+                <div id = "symplist">
+                    <ul>
+                    </ul>
+                </div>
+                <p id = "symp">Enter your symptom here:</p>
+                <form method="post">
+                    <input class = "nodeinput" type="text" name="symptom">
+                </form>
+                <br class="buttonbreak">
+                <button id = "plus">+</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
     <table class="container-table">
         <tr>
             <td valign="middle" colspan="2" class="td-header box-white bordered-box width50"><h4 class="header" id="selectSymptomsTitle"><span class="badge pull-left badge-primary visible-lg margin5R">1</span></h4></td>
@@ -84,5 +137,6 @@
         <a target="_blank" href="http://apimedic.com"><img class="logo" alt="ApiMedic by priaid" src="symptom_selector/images/logo.jpg" /></a>
         <span ><a class="priaid-powered" target="_blank" href="http://apimedic.com"> powered by  </a> </span>
     </div>
+   -->
 </body>
 </html>
