@@ -168,3 +168,19 @@ label{
 #type{
     width:150px;
 }
+.side
+{
+    float:left;
+}
+.select{
+    display:flex;
+    flex-direction: row;
+    opacity:.75;
+    background-color: #1b6d85;
+    color:white;
+    padding: 20px;
+
+    width:200px;
+    height: 200px;
+    border-radius: 200px;
+}

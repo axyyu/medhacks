@@ -24,15 +24,19 @@
 
         $(document).ready()
         {
-            $("#conatiner").hide();
+            $("#container").hide();
 
             $("#container2").hide()
             $("#signup").click(function()
             {
-                $("#conatiner").show();
+                $("#container").show();
                 $(".box2").hide();
             });
-            $("#continue")
+            $("#continue").click(function()
+            {
+                $("#container2").show();
+                $("#container").hide();
+            });
         }
     </script>
 </head>
@@ -128,11 +132,11 @@
 
 <div id = "container2">
     <div class = "box">
-        <div id = "centerfrac">
+        <div class = "select" class="side">
             <h1>Male</h1>
         </div>
-        <br class = "largespace">
-        <div id = "centerfrac">
+
+        <div class = "select" class="side">
             <h2>Female</h2>
         </div>
     </div>
