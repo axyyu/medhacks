@@ -13,6 +13,7 @@ $(document).ready(function(){
     {
         $("#container").show();
         $("#boxx2").hide();
+        return false;
     });
     $("#continue").click(function()
     {
