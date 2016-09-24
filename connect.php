@@ -52,7 +52,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="SampleAvatar/index.php">Diagnostic</a></li>
+                <li><a href="daig.php">Diagnostic</a></li>
                 <li class="active"><a href="#">Connect</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

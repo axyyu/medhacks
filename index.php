@@ -66,7 +66,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="SampleAvatar/index.php">Diagnostic</a></li>
+                <li><a href="daig.php">Diagnostic</a></li>
                 <li><a href="connect.php">Connect</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
