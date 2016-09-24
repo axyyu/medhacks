@@ -4,7 +4,8 @@
     <!-- Sources -->
     <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
     <script src="resources/js/jquery.js"></script>
-<datalist id="symptoms">
+<!--     <script src="resources/js/diag.js"></script>
+ --><datalist id="symptoms">
   <option value="Abdominal pain">
   <option value="Back pain">
   <option value="Chest pain">
@@ -87,7 +88,8 @@
   <option value="Itching">
   <option value="Abrasion">
   <option value="Laceration">
-  <option value="Infertility">
+  <option value="Wheezing">
+  <option value="Infertillity">
 </datalist>
     <script src="resources/js/scripts.js"></script>
     <script src="resources/js/bootstrap.js"></script>
@@ -107,8 +109,10 @@
         };
         firebase.initializeApp(config);
     </script>
+
 </head>
 <body>
+
 <!--
     <div id = "header">
         <div id = "logo">
@@ -164,7 +168,7 @@
                     </ul>
                 </div>
                 <p id = "symp">Enter your symptom here:</p>
-                <input class = "nodeinput" type="text" name="symptom" list="symptoms">
+                <input id="symtext" class = "nodeinput" type="text" name="symptom" list="symptoms">
                 <br class="buttonbreak">
                 <button id = "plus">+</button>
             </div>
@@ -256,7 +260,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
     <div class="contact3">
         <div id="frac3">
             <div class="dname1">
@@ -357,8 +360,6 @@
             </div>
         </div>
     </div>
-=======
->>>>>>> refs/remotes/origin/Pokabeep-patch-1
 </div>
 
 

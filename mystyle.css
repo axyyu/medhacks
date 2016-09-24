@@ -88,12 +88,48 @@ body{
     position: fixed;
     /*transform: translateX(-50%);*/
 }
+.contact3
+{
+    position: relative;
+    top:43%;
+    transform: translateY(-50%);
+    left:89%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact4
+{
+    position: relative;
+    top:61%;
+    transform: translateY(-50%);
+    left:89%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
 .disease3
 {
     position: relative;
     top:24%;
     transform: translateY(-50%);
     left:60%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact5
+{
+    position: relative;
+    top:20%;
+    transform: translateY(-50%);
+    left:51%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact6
+{
+    position: relative;
+    top:26%;
+    transform: translateY(-50%);
+    left:77%;
     position: fixed;
     /*transform: translateX(-50%);*/
 }
@@ -106,6 +142,24 @@ body{
     position: fixed;
     /*transform: translateX(-50%);*/
 }
+.contact9
+{
+    position: relative;
+    top:78%;
+    transform: translateY(-50%);
+    left:24%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact10
+{
+    position: relative;
+    top:84%;
+    transform: translateY(-50%);
+    left:50%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
 .disease5
 {
     position: relative;
@@ -115,12 +169,66 @@ body{
     position: fixed;
     /*transform: translateX(-50%);*/
 }
+.contact7
+{
+    position: relative;
+    top:26%;
+    transform: translateY(-50%);
+    left:24%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact8
+{
+    position: relative;
+    top:20%;
+    transform: translateY(-50%);
+    left:50%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
 .disease6
 {
     position: relative;
     top:80%;
     transform: translateY(-50%);
     left:60%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact11
+{
+    position: relative;
+    top:84%;
+    transform: translateY(-50%);
+    left:51%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact12
+{
+    position: relative;
+    top:78%;
+    transform: translateY(-50%);
+    left:77%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact1
+{
+    position: relative;
+    top:43%;
+    transform: translateY(-50%);
+    left:12%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact2
+{
+    position: relative;
+    top:61%;
+    transform: translateY(-50%);
+    left:12%;
     position: fixed;
     /*transform: translateX(-50%);*/
 }
@@ -148,6 +256,19 @@ body{
     width:200px;
     height: 200px;
     border-radius: 200px;
+
+}
+#frac3
+{
+    display:flex;
+    flex-direction: column;
+    opacity:.75;
+    background-color: #1b6d85;
+    color:white;
+
+    width:100px;
+    height: 100px;
+    border-radius: 100px;
 
 }
 .box2
