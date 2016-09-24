@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="477077b8-6ea4-462d-8a56-41c0bc05c265" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleAvatar/index.php" afterPath="$PROJECT_DIR$/SampleAvatar/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js" afterPath="$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connect.php" afterPath="$PROJECT_DIR$/connect.php" />
     </list>
     <ignored path="medhacks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,8 +46,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SampleAvatar/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+            <state relative-caret-position="274">
+              <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -62,8 +59,8 @@
             <state relative-caret-position="198">
               <caret line="333" column="39" selection-start-line="333" selection-start-column="39" selection-end-line="333" selection-end-column="39" />
               <folding>
-                <marker date="1474737212274" expanded="true" signature="57035:57047" ph="..." />
-                <marker date="1474737212274" expanded="true" signature="57279:57321" ph="..." />
+                <marker date="1474737262337" expanded="true" signature="57035:57047" ph="..." />
+                <marker date="1474737262337" expanded="true" signature="57279:57321" ph="..." />
               </folding>
             </state>
           </provider>
@@ -95,8 +92,11 @@
         <entry file="file://$PROJECT_DIR$/resources/css/mystyle.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1020">
-              <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-              <folding />
+              <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+              <folding>
+                <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
+                <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,8 +149,8 @@
         <option value="$PROJECT_DIR$/diag.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/connect.php" />
-        <option value="$PROJECT_DIR$/SampleAvatar/index.php" />
         <option value="$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js" />
+        <option value="$PROJECT_DIR$/SampleAvatar/index.php" />
       </list>
     </option>
   </component>
@@ -386,12 +386,12 @@
       <workItem from="1474722171795" duration="1932000" />
       <workItem from="1474724235539" duration="376000" />
       <workItem from="1474724714986" duration="10739000" />
-      <workItem from="1474736707025" duration="501000" />
+      <workItem from="1474736707025" duration="647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32032000" />
+    <option name="totallyTimeSpent" value="32178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1056" extended-state="0" />
@@ -454,7 +454,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-          <folding />
+          <folding>
+            <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
+            <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -520,7 +523,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-          <folding />
+          <folding>
+            <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
+            <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -596,7 +602,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
-          <folding />
+          <folding>
+            <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
+            <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -641,7 +650,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
+            <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -671,7 +683,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-          <folding />
+          <folding>
+            <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
+            <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -759,21 +774,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="333" column="39" selection-start-line="333" selection-start-column="39" selection-end-line="333" selection-end-column="39" />
           <folding>
-            <marker date="1474737212274" expanded="true" signature="57035:57047" ph="..." />
-            <marker date="1474737212274" expanded="true" signature="57279:57321" ph="..." />
+            <marker date="1474737262337" expanded="true" signature="57035:57047" ph="..." />
+            <marker date="1474737262337" expanded="true" signature="57279:57321" ph="..." />
           </folding>
         </state>
       </provider>
@@ -799,8 +806,11 @@
     <entry file="file://$PROJECT_DIR$/resources/css/mystyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
-          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-          <folding />
+          <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+          <folding>
+            <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
+            <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -820,10 +830,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SampleAvatar/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+        <state relative-caret-position="274">
+          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
           <folding />
         </state>
       </provider>
