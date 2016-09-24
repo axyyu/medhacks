@@ -1,24 +1,24 @@
 /**
  * Created by andre on 9/24/2016.
  */
+$("#container").hide();
+$("#container3").hide();
+$("#container4").hide();
+$("#container5").hide();
+$("#container6").hide();
+$("#container2").hide();
 $(document).ready(function(){
 
-    $("#container").hide();
-    $("#container3").hide();
-    $("#container4").hide();
-    $("#container5").hide();
-    $("#container6").hide();
-    $("#container2").hide();
     $("#signup").click(function()
     {
         $("#container").show();
         $("#boxx2").hide();
-        return false;
     });
-    $("#continue").click(function()
+    $("#continue").click(function(e)
     {
         $("#container").hide();
         $("#container2").show();
+        e.preventDefault();
     });
     $("#male").click(function()
     {
