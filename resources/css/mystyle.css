@@ -73,7 +73,7 @@ body{
 #centerfrac
 {
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     opacity:.75;
     background-color: #1b6d85;
     color:white;
@@ -145,8 +145,16 @@ body{
     content: " ";
     clear: both;
 }
+.buttonbreak
+{
+    height: 15px;
+    display: block;
+    margin: 10px 0;
+    content: " ";
+    clear: both;
+}
 .signUp{
-color: white; 
+    color: white;
 }
 .signUpColor::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: white;
@@ -158,5 +166,5 @@ label{
     margin-top: 12px;
 }
 #type{
- width:150px;  
+    width:150px;
 }

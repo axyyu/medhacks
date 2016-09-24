@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="477077b8-6ea4-462d-8a56-41c0bc05c265" name="Default" comment="" />
+    <list default="true" id="477077b8-6ea4-462d-8a56-41c0bc05c265" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/mystyle.css" afterPath="$PROJECT_DIR$/resources/css/mystyle.css" />
+    </list>
     <ignored path="medhacks.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,9 +27,11 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="837">
+              <caret line="146" column="7" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,7 +49,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SampleAvatar/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="1224">
               <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
@@ -54,12 +59,9 @@
       <file leaf-file-name="selector.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
+            <state relative-caret-position="14569">
               <caret line="857" column="20" selection-start-line="857" selection-start-column="20" selection-end-line="857" selection-end-column="20" />
-              <folding>
-                <marker date="1474738374759" expanded="true" signature="56975:56987" ph="..." />
-                <marker date="1474738374759" expanded="true" signature="57219:57261" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,12 +91,9 @@
       <file leaf-file-name="mystyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/css/mystyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
-              <folding>
-                <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
-                <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
-              </folding>
+            <state relative-caret-position="2873">
+              <caret line="169" column="1" selection-start-line="169" selection-start-column="1" selection-end-line="169" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,14 +140,14 @@
         <option value="$PROJECT_DIR$/diag.html" />
         <option value="$PROJECT_DIR$/connect.html" />
         <option value="$PROJECT_DIR$/resources/js/dscripts.js" />
-        <option value="$PROJECT_DIR$/resources/css/mystyle.css" />
         <option value="$PROJECT_DIR$/resources/js/scripts.js" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/diag.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/connect.php" />
         <option value="$PROJECT_DIR$/SampleAvatar/index.php" />
         <option value="$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js" />
+        <option value="$PROJECT_DIR$/resources/css/mystyle.css" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -162,7 +161,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="width" value="1924" />
-    <option name="height" value="1056" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -291,8 +290,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,17 +384,18 @@
       <workItem from="1474724235539" duration="376000" />
       <workItem from="1474724714986" duration="10739000" />
       <workItem from="1474736707025" duration="2127000" />
+      <workItem from="1474743075317" duration="29000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33658000" />
+    <option name="totallyTimeSpent" value="33687000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1924" height="1056" extended-state="1" />
+    <frame x="-8" y="0" width="1924" height="1058" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05686695" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.057403434" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -452,10 +452,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-          <folding>
-            <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
-            <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -479,7 +476,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -521,10 +520,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-          <folding>
-            <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
-            <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -555,7 +551,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1394">
           <caret line="82" column="7" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -600,10 +598,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
-          <folding>
-            <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
-            <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -648,10 +643,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
-            <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -681,10 +673,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-          <folding>
-            <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
-            <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -782,17 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/mystyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
-          <folding>
-            <marker date="1474737261461" expanded="true" signature="1533:1642" ph="{...}" />
-            <marker date="1474737261461" expanded="true" signature="2481:2484" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -811,18 +789,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
+        <state relative-caret-position="14569">
           <caret line="857" column="20" selection-start-line="857" selection-start-column="20" selection-end-line="857" selection-end-column="20" />
-          <folding>
-            <marker date="1474738374759" expanded="true" signature="56975:56987" ph="..." />
-            <marker date="1474738374759" expanded="true" signature="57219:57261" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SampleAvatar/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="1224">
           <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
@@ -836,11 +811,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/mystyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2873">
+          <caret line="169" column="1" selection-start-line="169" selection-start-column="1" selection-end-line="169" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="837">
+          <caret line="146" column="7" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

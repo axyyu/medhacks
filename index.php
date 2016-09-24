@@ -22,6 +22,19 @@
             messagingSenderId: "267096838240"
         };
         firebase.initializeApp(config);
+
+        $(document).ready()
+        {
+            $("#conatiner").hide();
+
+            $("#container2").hide()
+            $("#signup").click(function()
+            {
+                $("#conatiner").show();
+                $(".box2").hide();
+            });
+            $("#continue")
+        }
     </script>
 </head>
 <body>
@@ -73,7 +86,57 @@
 <div class="box2">
     <img class = "logo" src="doxtal.png">
     <br>
-    <button class = "begin">Get Started</button> <!--make a purpose for this -->
+    <button class = "begin" id="signup">Get Started</button> <!--make a purpose for this -->
+</div>
+
+<div id = "container">
+    <div class = "box">
+        <div id = "centerfrac">
+            <div class = "box2">
+                <div id = "symplist">
+                    <ul>
+                    </ul>
+                </div>
+                <h1 style="font-size:22px">Sign Up</h1>
+                Account Type<br>
+                <form class="signUp">
+                    <!-- Account Type<br> -->
+                    <select class="selectText" id="type">
+                        <option>Patient</option>
+                        <option>Doctor</option>
+                    </select><br>
+                    <label>
+                        <input class="nodeinput signUpColor" type="text" name="user" placeholder="Username"><br>
+                    </label>
+                    <label>
+                        <input class="nodeinput signUpColor" type="text" name="pass" placeholder="Password"><br>
+                    </label>
+                    <label>
+                        <input class="nodeinput signUpColor" type="text" name="confirm" placeholder="Confirm Password"><br>
+                    </label>
+                    <label>
+                        <input class="nodeinput signUpColor" type="email" name="email" placeholder="Email"><br>
+                    </label><br>
+                    <label>
+                        <input class="nodeinput signUpColor" id ="continue" type="submit" value="Continue">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id = "container2">
+    <div class = "box">
+        <div id = "centerfrac">
+            <h1>Male</h1>
+        </div>
+        <br class = "largespace">
+        <div id = "centerfrac">
+            <h2>Female</h2>
+        </div>
+    </div>
 </div>
 
 
