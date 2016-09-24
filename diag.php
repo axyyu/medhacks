@@ -90,7 +90,7 @@
 </div>
 
 <?php
-    echo "THIS IS A TEST";
+
     $symptom = $_POST['symptom'];
     //$curl = curl_init("https://api.infermedica.com/v2/search?phrase=headache");
 
@@ -99,7 +99,11 @@
     curl_setopt_array($curl, array(
     CURLOPT_RETURNTRANSFER => 1,
     CURLOPT_URL => 'https://api.infermedica.com/v2/search?phrase='.$symptom,
-    CURLOPT_USERAGENT => 'Test Request'
+    CURLOPT_USERAGENT => 'Test Request',
+    APP_ID => '88252933',
+        app_id => '88252933',
+    APP_KEY => 'dd0c08c097535c3dfc37c8a18aa7e938',
+        app_key => 'dd0c08c097535c3dfc37c8a18aa7e938'
     ));
     // Send the request & save response to $resp
     $resp = curl_exec($curl);
