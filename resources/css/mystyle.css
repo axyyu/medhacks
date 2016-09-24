@@ -183,7 +183,34 @@ label{
 #type{
     width:150px;
 }
-.side
+#container2
+{
+    text-align: center;
+    height: 85%;
+    width: 100%;
+}
+.box4
+{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    left:42.5%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+#centerfrac2
+{
+    display:flex;
+    flex-direction: row;
+    opacity:.75;
+    background-color: #1b6d85;
+    color:white;
+
+    width:300px;
+    height: 300px;
+    border-radius: 300px;
+
+}.side
 {
     float:left;
 }
