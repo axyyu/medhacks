@@ -83,6 +83,19 @@ body{
     border-radius: 300px;
 
 }
+#centerfracup
+{
+    display:flex;
+    flex-direction: row;
+    opacity:.75;
+    background-color: #1b6d85;
+    color:white;
+
+    width:300px;
+    height: 400px;
+    border-radius: 300px;
+
+}
 .box2
 {
     position: relative;

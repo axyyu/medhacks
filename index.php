@@ -79,7 +79,7 @@
 
 <div id = "container">
     <div class = "box">
-        <div id = "centerfrac">
+        <div id = "centerfracup">
             <div class = "box2">
                 <div id = "symplist">
                     <ul>
