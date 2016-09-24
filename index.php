@@ -87,7 +87,7 @@
                 </div>
                 <h1 style="font-size:22px">Sign Up</h1>
                 Account Type<br>
-                <form class="signUp">
+                <form class="signUp" id="continue_form">
                     <!-- Account Type<br> -->
                     <select class="selectText" id="type">
                         <option>Patient</option>

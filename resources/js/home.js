@@ -14,11 +14,11 @@ $(document).ready(function(){
         $("#container").show();
         $("#boxx2").hide();
     });
-    $("#continue").click(function(e)
+    $("#continue_form").submit(function(e)
     {
         $("#container").hide();
         $("#container2").show();
-        e.preventDefault();
+        return false;
     });
     $("#male").click(function()
     {
