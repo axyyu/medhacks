@@ -103,6 +103,7 @@ body{
     border-width: 2px;
     border: white;
     outline: 2px white solid;
+
 }
 .begin
 {
@@ -145,5 +146,17 @@ body{
     clear: both;
 }
 .signUp{
-color: #046bbf; 
+color: white; 
+}
+.signUpColor::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+.selectText{
+    color:  #696969;
+}
+label{
+    margin-top: 12px;
+}
+#type{
+ width:150px;  
 }
