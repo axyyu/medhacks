@@ -48,11 +48,11 @@
 	?>
 
 	<script type="text/javascript">
-    /*
-		var userToken = ;
-		
+
+		var userToken = <?php echo "'".$token."'" ?>;
+
         $(document).ready(function () {
-            $("#symptomSelector").symptomSelector(
+            symptomSelector(
             {
                 mode: "diagnosis",
                 webservice: "https://sandbox-healthservice.priaid.ch",
@@ -61,7 +61,7 @@
                 accessToken: userToken
             });
         });
-        */
+
     </script>
 
 	
