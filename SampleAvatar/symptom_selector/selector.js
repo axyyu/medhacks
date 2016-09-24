@@ -806,7 +806,6 @@ var mode = "diagnosis";
         },
         SetValidSymptoms: function (options) {
             _validSymptoms = options.ValidSymptoms;
-            _avatarOptions.LocationId = options.LocationId;
             _avatarOptions.SelectorStatus = options.SelectorStatus;
             _avatarOptions.Gender = options.Gender;
             _avatarOptions.YearOfBirth = options.YearOfBirth;

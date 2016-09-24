@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="477077b8-6ea4-462d-8a56-41c0bc05c265" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleAvatar/index.php" afterPath="$PROJECT_DIR$/SampleAvatar/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js" afterPath="$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js" />
     </list>
     <ignored path="medhacks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,31 +36,31 @@
       <file leaf-file-name="connect.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+            <state relative-caret-position="357">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SampleAvatar/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+            <state relative-caret-position="561">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="selector.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="selector.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="333" column="39" selection-start-line="333" selection-start-column="39" selection-end-line="333" selection-end-column="39" />
+            <state relative-caret-position="354">
+              <caret line="817" column="53" selection-start-line="817" selection-start-column="53" selection-end-line="817" selection-end-column="53" />
               <folding>
-                <marker date="1474737262337" expanded="true" signature="57035:57047" ph="..." />
-                <marker date="1474737262337" expanded="true" signature="57279:57321" ph="..." />
+                <marker date="1474738374759" expanded="true" signature="56975:56987" ph="..." />
+                <marker date="1474738374759" expanded="true" signature="57219:57261" ph="..." />
               </folding>
             </state>
           </provider>
@@ -149,8 +149,8 @@
         <option value="$PROJECT_DIR$/diag.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/connect.php" />
-        <option value="$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js" />
         <option value="$PROJECT_DIR$/SampleAvatar/index.php" />
+        <option value="$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js" />
       </list>
     </option>
   </component>
@@ -386,12 +386,12 @@
       <workItem from="1474722171795" duration="1932000" />
       <workItem from="1474724235539" duration="376000" />
       <workItem from="1474724714986" duration="10739000" />
-      <workItem from="1474736707025" duration="647000" />
+      <workItem from="1474736707025" duration="1654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32178000" />
+    <option name="totallyTimeSpent" value="33185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1056" extended-state="0" />
@@ -774,17 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="333" column="39" selection-start-line="333" selection-start-column="39" selection-end-line="333" selection-end-column="39" />
-          <folding>
-            <marker date="1474737262337" expanded="true" signature="57035:57047" ph="..." />
-            <marker date="1474737262337" expanded="true" signature="57279:57321" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -832,17 +821,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+        <state relative-caret-position="357">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SampleAvatar/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+        <state relative-caret-position="561">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="817" column="53" selection-start-line="817" selection-start-column="53" selection-end-line="817" selection-end-column="53" />
+          <folding>
+            <marker date="1474738374759" expanded="true" signature="56975:56987" ph="..." />
+            <marker date="1474738374759" expanded="true" signature="57219:57261" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
