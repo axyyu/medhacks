@@ -16,4 +16,19 @@ $(document).ready(function(){
         $("#container").hide();
         $("#container2").show();
     });
+    $("#continue").click(function()
+    {
+        $("#container").hide();
+        $("#container2").show();
+    });
+    $('#age').keypress(function (e) {
+        if (e.which == 13) {
+            return false;    //<---- Add this line
+        }
+    });
+    $('#weight').keypress(function (e) {
+        if (e.which == 13) {
+            return false;    //<---- Add this line
+        }
+    });
 });

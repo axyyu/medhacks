@@ -55,7 +55,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="daig.php">Diagnostic</a></li>
+                <li><a href="diag.php">Diagnostic</a></li>
                 <li><a href="connect.php">Connect</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -124,6 +124,46 @@
         <div class = "select side">
             <h2>Female</h2>
         </div>
+    </div>
+</div>
+
+<div id = "container3">
+    <div class = "box">
+            <h1>What is your age?</h1>
+            <br>
+        <form class = "stalone">
+            <input class="nodeinput signUpColor" id="age" type="text" name="Age" placeholder="Age">
+        </form>
+    </div>
+</div>
+
+<div id = "container4">
+    <div class = "box">
+        <h1>What is your weight?</h1>
+        <br>
+        <form class = "stalone">
+            <input class="nodeinput signUpColor" id="weight" type="text" name="Weight" placeholder="Weight">
+        </form>
+    </div>
+</div>
+
+<div id = "container5">
+    <div class = "box">
+        <h1>Do you have any allergies? If so, to what?</h1>
+        <br>
+        <form class = "stalone">
+            <input class="nodeinput signUpColor" id="allergy" type="text" name="Weight" placeholder="Weight">
+        </form>
+    </div>
+</div>
+
+<div id = "container5">
+    <div class = "box">
+        <h1>Any other risk factors?</h1>
+        <br>
+        <form class = "stalone">
+            <input class="nodeinput signUpColor" id="risk" type="text" name="Risks" placeholder="Risks">
+        </form>
     </div>
 </div>
 
