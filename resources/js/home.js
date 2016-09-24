@@ -9,11 +9,11 @@ $(document).ready(function(){
     $("#signup").click(function()
     {
         $("#container").show();
-        $(".boxx2").hide();
+        $("#boxx2").hide();
     });
     $("#continue").click(function()
     {
-        $("#container2").show();
         $("#container").hide();
+        $("#container2").show();
     });
 });

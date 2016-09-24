@@ -117,11 +117,11 @@
 
 <div id = "container2">
     <div class = "box">
-        <div class = "select" class="side">
+        <div class = "select side">
             <h1>Male</h1>
         </div>
 
-        <div class = "select" class="side">
+        <div class = "select side">
             <h2>Female</h2>
         </div>
     </div>
