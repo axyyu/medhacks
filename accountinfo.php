@@ -93,18 +93,19 @@ session_start();
             <div id = "dinfo2">
                 <?php echo $_SESSION["username"]?><br>
                 <?php echo $_SESSION["password"]?><br>
+                <?php echo $_SESSION["email"]?><br>
             </div>
         </div>
     </div>
 </div>
-
+<!--
 <div class="disease3a">
     <div id="frac2a">
         <div class="dname1a">
             <h2>Sex</h2> <br>
         </div>
         <div id = "dinfo1">
-            <?php echo $_SESSION["sex"]?>
+            <?php //echo $_SESSION["sex"]?>
         </div>
     </div>
 </div>
@@ -116,7 +117,7 @@ session_start();
 
         </div>
         <div id = "dinfo1">
-            <?php echo $_SESSION["age"]?>
+            <?php //echo $_SESSION["age"]?>
         </div>
     </div>
 </div>
@@ -128,7 +129,7 @@ session_start();
 
         </div>
         <div id = "dinfo1">
-            <?php echo $_SESSION["weight"]?>
+            <?php //echo $_SESSION["weight"]?>
         </div>
     </div>
 </div>
@@ -139,10 +140,11 @@ session_start();
             <h2>Allergies</h2><br>
         </div>
         <div id = "dinfo1">
-            <?php echo $_SESSION["allergy"]?>
+            <?php //echo $_SESSION["allergy"]?>
         </div>
     </div>
 </div>
+-->
 </body>
 
 </html>

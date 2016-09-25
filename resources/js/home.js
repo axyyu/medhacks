@@ -34,6 +34,7 @@ $(document).ready(function(){
         $("#container5").hide();
         $("#container6").hide();
         $("#container2").show();
+        $("#boxx2").hide();
         return false;
     });
     $("#male").click(function()
@@ -56,6 +57,7 @@ $(document).ready(function(){
         $("#container5").hide();
         $("#container6").hide();
         $("#container2").hide();
+        $("#boxx2").hide();
     });
     $("#female").click(function()
     {
@@ -77,6 +79,7 @@ $(document).ready(function(){
         $("#container5").hide();
         $("#container6").hide();
         $("#container2").hide();
+        $("#boxx2").hide();
     });
     $('#age').keypress(function (e) {
         if (e.which == 13) {
@@ -97,6 +100,7 @@ $(document).ready(function(){
             $("#container5").hide();
             $("#container6").hide();
             $("#container2").hide();
+            $("#boxx2").hide();
             return false;    //<---- Add this line
         }
     });
@@ -119,6 +123,7 @@ $(document).ready(function(){
             $("#container5").show();
             $("#container6").hide();
             $("#container2").hide();
+            $("#boxx2").hide();
             return false;    //<---- Add this line
         }
     });
@@ -141,6 +146,7 @@ $(document).ready(function(){
             $("#container5").hide();
             $("#container6").show();
             $("#container2").hide();
+            $("#boxx2").hide();
             return false;    //<---- Add this line
         }
     });
@@ -165,6 +171,7 @@ $(document).ready(function(){
             $("#container5").hide();
             $("#container6").hide();
             $("#container2").hide();
+            $("#boxx2").hide();
         }
     });
 
