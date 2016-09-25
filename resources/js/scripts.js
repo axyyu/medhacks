@@ -105,7 +105,7 @@ $(document).ready(function()
       $("#"+num1).fadeToggle(500);
       $("#"+num2).fadeToggle(1000);
     });
-  for( i in 0; i<13; i++)
+  for( i = 0; i<13; i++)
   {
     if(i%2=0)
     {

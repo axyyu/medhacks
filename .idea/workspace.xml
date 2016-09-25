@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="477077b8-6ea4-462d-8a56-41c0bc05c265" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doctors.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prescriptions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diag.php" afterPath="$PROJECT_DIR$/diag.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/scripts.js" afterPath="$PROJECT_DIR$/resources/js/scripts.js" />
     </list>
     <ignored path="medhacks.iws" />
@@ -90,8 +86,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="120" column="45" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="45" />
+            <state relative-caret-position="337">
+              <caret line="109" column="7" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -509,12 +505,12 @@
       <workItem from="1474779667474" duration="7600000" />
       <workItem from="1474798024048" duration="9485000" />
       <workItem from="1474807666334" duration="1970000" />
-      <workItem from="1474809704715" duration="569000" />
+      <workItem from="1474809704715" duration="616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72717000" />
+    <option name="totallyTimeSpent" value="72764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -950,8 +946,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="120" column="45" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="45" />
+        <state relative-caret-position="337">
+          <caret line="109" column="7" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
           <folding />
         </state>
       </provider>
