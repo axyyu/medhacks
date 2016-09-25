@@ -12,11 +12,11 @@ map["Tears"] = 211;
 map["Swollen glands on the neck"] = 169;
 map["Swollen glands in the armpits"] = 248;
 map["Sweating"] = 138;
-map["Stuffy nose"] = ["Flu: General practice, Internal medicine","Cold: General practice","Inflammation of the nose and throat: General practice, Otolaryngology","Hay fever: Allergology, General practice, Otolaryngology", "Smoking: General practice"];
+map["Stuffy nose"] = ["Flu: General practice, Internal medicine","Cold: General practice","Inflammation of the nose and throat: General practice, Otolaryngology","Hay fever: Allergology, General practice, Otolaryngology", "Smoking: General practice", "undefined"];
 map["Stomach burning"] = 179;
 map["Sputum"] = 64;
 map["Sore throat"] = ["Inflammation of the nose and throat: General practice, Otolaryngology","Cold: General practice", "Flu: General practice, Internal medicine", "Inflammation of the tonsils: General practice, Internal medicine","Abscess of the tonsils: General practice, Internal medicine, Otolaryngology","Reflux disease: Gastroenterology, General practice"];
-map["Sneezing"] = ["Flu: General practice, Internal medicine","Cold: General practice","Hay fever: Allergology, General practice, Otolaryngology"];
+map["Sneezing"] = ["Flu: General practice, Internal medicine","Cold: General practice","Hay fever: Allergology, General practice, Otolaryngology", "undefined", "undefined", "undefined"];
 map["Sleeplessness"] = 52;
 map["Skin rash"] = 124;
 map["Shortness of breath"] = 29;
@@ -120,8 +120,12 @@ function checkFunction(boo)
     $(".disease1").fadeIn(500);
     $(".disease5").fadeIn(1000);
     $(".disease3").fadeIn(1500);
-    $(".disease2").fadeIn(2000);
-    $(".disease6").fadeIn(2000);
+    if(map[s][5]!='undefined') {
+      $(".disease2").fadeIn(2000);
+    }
+    if(map[s][5]!='undefined') {
+      $(".disease6").fadeIn(2000);
+    }
     if(map[s][5]!='undefined') {
       $(".disease4").fadeIn(2000);
     }
