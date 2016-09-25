@@ -65,6 +65,203 @@ body{
 {
     position: relative;
     top:52%;
+<<<<<<< HEAD
+    transform: translateY(-50%);
+    left:42.5%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.disease1
+{
+    position: relative;
+    top:52%;
+    transform: translateY(-50%);
+    left:20%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+#dinfo1b{
+    position: relative;
+    top:10%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 20px;
+}
+
+#dinfo2b{
+    position: relative;
+    top:50%;
+    transform: translateY(-30%);
+    text-align: center;
+    font-size: 20px;
+}
+#dinfo2b{
+    position: relative;
+    top:50%;
+    transform: translateY(-30%);
+    text-align: center;
+    font-size: 16px;
+}
+.disease2
+{
+    position: relative;
+    top:52%;
+    transform: translateY(-50%);
+    left:73%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact3
+{
+    position: relative;
+    top:43%;
+    transform: translateY(-50%);
+    left:89%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact4
+{
+    position: relative;
+    top:61%;
+    transform: translateY(-50%);
+    left:89%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.disease3
+{
+    position: relative;
+    top:24%;
+    transform: translateY(-50%);
+    left:60%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact5
+{
+    position: relative;
+    top:20%;
+    transform: translateY(-50%);
+    left:51%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact6
+{
+    position: relative;
+    top:26%;
+    transform: translateY(-50%);
+    left:77%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.disease4
+{
+    position: relative;
+    top:80%;
+    transform: translateY(-50%);
+    left:33%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact9
+{
+    position: relative;
+    top:78%;
+    transform: translateY(-50%);
+    left:24%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact10
+{
+    position: relative;
+    top:84%;
+    transform: translateY(-50%);
+    left:50%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.disease5
+{
+    position: relative;
+    top:24%;
+    transform: translateY(-50%);
+    left:33%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact7
+{
+    position: relative;
+    top:26%;
+    transform: translateY(-50%);
+    left:24%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact8
+{
+    position: relative;
+    top:20%;
+    transform: translateY(-50%);
+    left:50%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.disease6
+{
+    position: relative;
+    top:80%;
+    transform: translateY(-50%);
+    left:60%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact11
+{
+    position: relative;
+    top:84%;
+    transform: translateY(-50%);
+    left:51%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact12
+{
+    position: relative;
+    top:78%;
+    transform: translateY(-50%);
+    left:77%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact1
+{
+    position: relative;
+    top:43%;
+    transform: translateY(-50%);
+    left:12%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.contact2
+{
+    position: relative;
+    top:61%;
+    transform: translateY(-50%);
+    left:12%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.boxex
+{
+    top:50%;
+    transform: translateY(-50%);
+    position: fixed;
+    text-align: center;
+=======
     transform: translateY(-50%);
     left:42.5%;
     position: fixed;
@@ -329,6 +526,25 @@ body{
     top:50%;
     transform: translateY(-50%);
     text-align: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.ddd
+{
+    position: relative;
+    top:65%;
+    transform: translateY(-60%);
+    text-align: center;
+        
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.ddd2
+{
+    position: relative;
+    top:45%;
+    transform: translateY(-60%);
+    text-align: center;
+        
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 .dname1
 {
@@ -736,6 +952,18 @@ body{
     >>>>>>> refs/remotes/origin/Edward*/
 
 }
+#frac4
+{
+    display:flex;
+    flex-direction: column;
+    opacity:.75;
+    background-color: #1b6d85;
+    color:white;
+
+    width:600px;
+    height: 600px;
+    border-radius: 600px;
+}
 .pick
 {
     font-weight: bold;
@@ -847,12 +1075,14 @@ label{
     transform: translateY(-50%);
     left:42.5%;
     position: fixed;
+>>>>>>> refs/remotes/origin/master
     /*transform: translateX(-50%);*/
+
 }
 #centerfrac2
 {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     opacity:.75;
     background-color: #1b6d85;
     color:white;
@@ -877,6 +1107,9 @@ label{
     height: 200px;
     border-radius: 200px;
 }
+<<<<<<< HEAD
+#frac2
+=======
 #header
 {
     width: 100%;
@@ -958,12 +1191,30 @@ body{
     position: fixed;
     /*transform: translateX(-50%);*/
 }
+.disease1b
+{
+    position: relative;
+    top:52%;
+    transform: translateY(-50%);
+    left:-20%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
 .disease2
 {
     position: relative;
     top:52%;
     transform: translateY(-50%);
     left:73%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.disease2b
+{
+    position: relative;
+    top:52%;
+    transform: translateY(-50%);
+    right:-20%;
     position: fixed;
     /*transform: translateX(-50%);*/
 }
@@ -1127,6 +1378,7 @@ body{
 
 }
 #centerfrac
+>>>>>>> refs/remotes/origin/master
 {
     display:flex;
     flex-direction: column;
@@ -1134,9 +1386,34 @@ body{
     background-color: #1b6d85;
     color:white;
 
+    width:200px;
+    height: 200px;
+    border-radius: 200px;
+
+}
+#frac3
+{
+    display:flex;
+    flex-direction: column;
+    opacity:.75;
+    background-color: #1b6d85;
+    color:white;
+
+/*  */
+    width:100px;
+    height: 100px;
+    border-radius: 100px;
+/*=======
+=======
+>>>>>>> origin/master
     width:300px;
     height: 300px;
     border-radius: 300px;
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/Edward*/
+=======
+
+>>>>>>> origin/master
 
 }
 #frac2
@@ -1236,16 +1513,12 @@ body{
       font-size: 20px;
       color: deepskyblue;
 }
-.buttonbreak
-{
-    height: 15px;
-    display: block;
-    margin: 10px 0;
-    content: " ";
-    clear: both;
-}
 .signUp{
+<<<<<<< HEAD
+color: #046bbf; 
+=======
 color: #046bbf;
+>>>>>>> refs/remotes/origin/master
 }
 .signUpColor::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: white;
