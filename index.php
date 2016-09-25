@@ -80,7 +80,7 @@ if( $_SESSION["login"])
         </div>
         <div>
             <?php
-                if(isset($_POST['username'])) {
+                if(!empty($_POST['username'])) {
                     $tuser = $_POST["username"];
                     $tpass = $_POST["password"];
                     if (strcmp($tuser, $_SESSION["username"])) {
