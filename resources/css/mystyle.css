@@ -232,6 +232,15 @@ body{
     position: fixed;
     /*transform: translateX(-50%);*/
 }
+.boxex
+{
+    top:50%;
+    transform: translateY(-50%);
+    position: fixed;
+    text-align: center;
+    /*transform: translateX(-50%);*/
+
+}
 #centerfrac
 {
     display:flex;
@@ -266,14 +275,21 @@ body{
     background-color: #1b6d85;
     color:white;
 
+<<<<<<< HEAD
     width:100px;
     height: 100px;
     border-radius: 100px;
 /*=======
+=======
+>>>>>>> origin/master
     width:300px;
     height: 300px;
     border-radius: 300px;
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Edward*/
+=======
+
+>>>>>>> origin/master
 
 }
 .box2

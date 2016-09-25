@@ -74,7 +74,8 @@
 <div class="box2" id="boxx2">
     <img class = "logo" src="doxtal.png">
     <br>
-    <button class = "begin" id="signup">Get Started</button> <!--make a purpose for this -->
+    <h1 align="center">Connecting doctors and patients like never before.</h1>
+    <button class = "begin" id="signup">Get Started</button> <!--make a purpose  for this -->
 </div>
 
 <div id = "container" style="display: none;">
@@ -128,8 +129,8 @@
 </div>
 
 <div id = "container3" style="display: none;">
-    <div class = "box">
-            <h1>What is your age?</h1>
+    <div class = "boxu2">
+            <h1>Your age?</h1>
             <br>
         <form class = "stalone">
             <input class="nodeinput signUpColor" id="age" type="text" name="Age" placeholder="Age">
@@ -138,8 +139,8 @@
 </div>
 
 <div id = "container4" style="display: none;">
-    <div class = "box">
-        <h1>What is your weight?</h1>
+    <div class = "boxu3" id="boxex">
+        <h1>Your weight?</h1>
         <br>
         <form class = "stalone">
             <input class="nodeinput signUpColor" id="weight" type="text" name="Weight" placeholder="Weight">
@@ -148,8 +149,8 @@
 </div>
 
 <div id = "container5" style="display: none;">
-    <div class = "box">
-        <h1>Do you have any allergies? If so, to what?</h1>
+    <div class = "boxu4" id="boxex">
+        <h1>Any allergies?</h1>
         <br>
         <form class = "stalone">
             <input class="nodeinput signUpColor" id="allergy" type="text" name="Weight" placeholder="Weight">
@@ -158,7 +159,7 @@
 </div>
 
 <div id = "container6" style="display: none;">
-    <div class = "box">
+    <div class = "boxu5" id="boxex">
         <h1>Any other risk factors?</h1>
         <br>
         <form class = "stalone" action="diag.php">
