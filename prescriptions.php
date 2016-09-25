@@ -56,18 +56,17 @@ session_start();
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="diag.html">Diagnostic</a></li>
-                <li><a href="#">Connect</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li class="active"><a href="diag.php">Diagnostic</a></li>
+                <li><a href="connect.php">Connect</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Messages</a></li>
-                        <li><a href="#">Prescriptions</a></li>
-                        <li><a href="#">Account Info</a></li>
+                        <li><a href="history.php">History</a></li>
+                        <li><a href="messages.php">Messages</a></li>
+                        <li><a href="accountinfo.php">Account Info</a></li>
                     </ul>
                 </li>
             </ul>
