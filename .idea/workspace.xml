@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="477077b8-6ea4-462d-8a56-41c0bc05c265" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accountinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyAccount_dropdown.html" afterPath="$PROJECT_DIR$/MyAccount_dropdown.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connect.php" afterPath="$PROJECT_DIR$/connect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diag.php" afterPath="$PROJECT_DIR$/diag.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/home.js" afterPath="$PROJECT_DIR$/resources/js/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/mystyle.css" afterPath="$PROJECT_DIR$/resources/css/mystyle.css" />
     </list>
     <ignored path="medhacks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +27,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
+            <state relative-caret-position="748">
+              <caret line="104" column="73" selection-start-line="104" selection-start-column="73" selection-end-line="104" selection-end-column="73" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -42,14 +37,24 @@
                 <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1474783187399" expanded="true" signature="4677:4703" ph="..." />
-                <marker date="1474783187399" expanded="false" signature="4755:4769" ph="..." />
-                <marker date="1474783187399" expanded="true" signature="5161:5199" ph="..." />
-                <marker date="1474783187399" expanded="true" signature="5331:5369" ph="..." />
-                <marker date="1474783187399" expanded="true" signature="5501:5539" ph="..." />
-                <marker date="1474783187399" expanded="true" signature="5682:5720" ph="..." />
-                <marker date="1474783187399" expanded="true" signature="5855:5893" ph="..." />
+                <marker date="1474783858773" expanded="true" signature="4706:4732" ph="..." />
+                <marker date="1474783858773" expanded="false" signature="4784:4798" ph="..." />
+                <marker date="1474783858773" expanded="true" signature="5190:5228" ph="..." />
+                <marker date="1474783858773" expanded="true" signature="5360:5398" ph="..." />
+                <marker date="1474783858773" expanded="true" signature="5530:5568" ph="..." />
+                <marker date="1474783858773" expanded="true" signature="5711:5749" ph="..." />
+                <marker date="1474783858773" expanded="true" signature="5884:5922" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mystyle.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/css/mystyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="1195" column="17" selection-start-line="1195" selection-start-column="17" selection-end-line="1195" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,13 +115,13 @@
         <option value="$PROJECT_DIR$/SampleAvatar/symptom_selector/selector.js" />
         <option value="$PROJECT_DIR$/diag.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/resources/css/mystyle.css" />
         <option value="$PROJECT_DIR$/resources/js/home.js" />
         <option value="$PROJECT_DIR$/MyAccount_dropdown.html" />
         <option value="$PROJECT_DIR$/connect.php" />
         <option value="$PROJECT_DIR$/accountinfo.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/diag.php" />
+        <option value="$PROJECT_DIR$/resources/css/mystyle.css" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -390,12 +395,12 @@
       <workItem from="1474745119678" duration="1154000" />
       <workItem from="1474747711438" duration="12953000" />
       <workItem from="1474765112717" duration="3376000" />
-      <workItem from="1474779667474" duration="3729000" />
+      <workItem from="1474779667474" duration="4426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56822000" />
+    <option name="totallyTimeSpent" value="57519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -751,14 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/mystyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="310" column="1" selection-start-line="310" selection-start-column="1" selection-end-line="310" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/diag.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -783,10 +780,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/mystyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="1195" column="17" selection-start-line="1195" selection-start-column="17" selection-end-line="1195" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
+        <state relative-caret-position="748">
+          <caret line="104" column="73" selection-start-line="104" selection-start-column="73" selection-end-line="104" selection-end-column="73" />
           <folding>
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -795,13 +800,13 @@
             <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1474783187399" expanded="true" signature="4677:4703" ph="..." />
-            <marker date="1474783187399" expanded="false" signature="4755:4769" ph="..." />
-            <marker date="1474783187399" expanded="true" signature="5161:5199" ph="..." />
-            <marker date="1474783187399" expanded="true" signature="5331:5369" ph="..." />
-            <marker date="1474783187399" expanded="true" signature="5501:5539" ph="..." />
-            <marker date="1474783187399" expanded="true" signature="5682:5720" ph="..." />
-            <marker date="1474783187399" expanded="true" signature="5855:5893" ph="..." />
+            <marker date="1474783858773" expanded="true" signature="4706:4732" ph="..." />
+            <marker date="1474783858773" expanded="false" signature="4784:4798" ph="..." />
+            <marker date="1474783858773" expanded="true" signature="5190:5228" ph="..." />
+            <marker date="1474783858773" expanded="true" signature="5360:5398" ph="..." />
+            <marker date="1474783858773" expanded="true" signature="5530:5568" ph="..." />
+            <marker date="1474783858773" expanded="true" signature="5711:5749" ph="..." />
+            <marker date="1474783858773" expanded="true" signature="5884:5922" ph="..." />
           </folding>
         </state>
       </provider>

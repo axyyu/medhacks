@@ -91,22 +91,19 @@ if( $_SESSION["login"])
         </div>
         <div>
             <?php
-                $tuser = $_POST["username"];
-                $tpass = $_POST["password"];
-                if( strcmp($tuser,$_SESSION["username"]))
-                {
-                    if(strcmp($tpass,$_SESSION["password"])) {
-                        $_SESSION["login"] = true;
-                        header("Location:accountinfo.php");
+                if(isset($_POST['username'])) {
+                    $tuser = $_POST["username"];
+                    $tpass = $_POST["password"];
+                    if (strcmp($tuser, $_SESSION["username"])) {
+                        if (strcmp($tpass, $_SESSION["password"])) {
+                            $_SESSION["login"] = true;
+                            header("Location:accountinfo.php");
+                        } else {
+                            echo "<script>alert(\"Wrong Password!\");</script>";
+                        }
+                    } else {
+                        echo "<script>alert(\"Wrong Username!\");</script>";
                     }
-                    else
-                    {
-                        echo "<script>alert(\"Wrong Password!\");</script>";
-                    }
-                }
-                else
-                {
-                    echo "<script>alert(\"Wrong Username!\");</script>";
                 }
             ?>
             </div>>
@@ -230,7 +227,7 @@ if( $_SESSION["login"])
             <div class = "box2">
                 <h1>Any other risk factors?</h1>
                 <br>
-                <form class = "stalone" action="diag.html" method="post">
+                <form class = "stalone" action="diag.php" method="post">
                     <input class="nodeinput signUpColor" id="risk" type="text" name="Risks" placeholder="Risks" autofocus>
                 </form>
             </div>
@@ -240,15 +237,19 @@ if( $_SESSION["login"])
 
 <?php
 // Set session variables
-$_SESSION["type"] = $_POST['type'];
-$_SESSION["username"] = $_POST["user"];
-$_SESSION["password"] = $_POST["pass"];
-$_SESSION["email"] = $_POST["email"];
-$_SESSION["sex"] = $_POST["sex"];
-$_SESSION["age"] = $_POST["Age"];
-$_SESSION["weight"] = $_POST["Weight"];
-$_SESSION["allergy"] = $_POST["Allergies"];
-$_SESSION["risk"] = $_POST["Risks"];
+if(isset($_POST['Allergies'])) {
+    $_SESSION["type"] = $_POST['type'];
+    $_SESSION["username"] = $_POST["user"];
+    $_SESSION["password"] = $_POST["pass"];
+    $_SESSION["email"] = $_POST["email"];
+    $_SESSION["sex"] = $_POST["sex"];
+    $_SESSION["age"] = $_POST["Age"];
+    $_SESSION["weight"] = $_POST["Weight"];
+    $_SESSION["allergy"] = $_POST["Allergies"];
+    $_SESSION["risk"] = $_POST["Risks"];
+
+    $_SESSION["login"] = true;
+}
 ?>
 
 
