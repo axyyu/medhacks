@@ -294,7 +294,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-
+                Contact a doctor
             </div>
         </div>
     </div>
@@ -304,7 +304,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-
+                Prescription
             </div>
         </div>
     </div>
@@ -314,7 +314,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-
+                Contact a doctor
             </div>
         </div>
     </div>
@@ -324,7 +324,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-
+                Prescription
             </div>
         </div>
     </div>
@@ -334,7 +334,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-
+                Contact a doctor
             </div>
         </div>
     </div>
@@ -344,7 +344,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-
+                Prescription
             </div>
         </div>
     </div>
@@ -354,7 +354,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-
+                Contact a doctor
             </div>
         </div>
     </div>
@@ -364,7 +364,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-
+                Prescription
             </div>
         </div>
     </div>
@@ -374,7 +374,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-
+                Contact a doctor
             </div>
         </div>
     </div>
@@ -384,7 +384,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-
+                Prescription
             </div>
         </div>
     </div>
@@ -394,7 +394,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-
+                Contact a doctor
             </div>
         </div>
     </div>
@@ -404,7 +404,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-
+                Prescription
             </div>
         </div>
     </div>

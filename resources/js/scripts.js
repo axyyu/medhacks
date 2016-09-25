@@ -105,6 +105,23 @@ $(document).ready(function()
       $("#"+num1).fadeToggle(500);
       $("#"+num2).fadeToggle(1000);
     });
+  for( i in 0; i<13; i++)
+  {
+    if(i%2=0)
+    {
+      $(".contact"+i).click(function()
+      {
+        window.location.replace("../../prescription.php");
+      });
+    }
+    else
+    {
+      $(".contact"+i).click(function()
+      {
+        window.location.replace("../../doctor.php");
+      });
+    }
+  }
 
 
 });
