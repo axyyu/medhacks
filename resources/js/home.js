@@ -20,7 +20,7 @@ $(document).ready(function(){
     {
         $("#container").hide();
         $("#container2").show();
-        return false;
+        //return false;
     });
     $("#male").click(function()
     {
@@ -38,21 +38,21 @@ $(document).ready(function(){
         if (e.which == 13) {
             $("#container3").hide();
             $("#container4").show();
-            return false;    //<---- Add this line
+            //return false;    //<---- Add this line
         }
     });
     $('#weight').keypress(function (e) {
         if (e.which == 13) {
             $("#container4").hide();
             $("#container5").show();
-            return false;    //<---- Add this line
+            //return false;    //<---- Add this line
         }
     });
     $('#allergy').keypress(function (e) {
         if (e.which == 13) {
             $("#container5").hide();
             $("#container6").show();
-            return false;    //<---- Add this line
+            //return false;    //<---- Add this line
         }
     });
 
