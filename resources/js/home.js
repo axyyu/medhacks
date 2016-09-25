@@ -26,11 +26,13 @@ $(document).ready(function(){
     {
         $("#container2").hide();
         $("#container3").show();
+        document.getElementById("chosex").innerHTML = "man";
     });
     $("#female").click(function()
     {
         $("#container2").hide();
         $("#container3").show();
+        document.getElementById("chosex").innerHTML = "woman";
     });
     $('#age').keypress(function (e) {
         if (e.which == 13) {
@@ -53,4 +55,5 @@ $(document).ready(function(){
             return false;    //<---- Add this line
         }
     });
+
 });

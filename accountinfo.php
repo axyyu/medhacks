@@ -2,7 +2,6 @@
 session_start();
 
 ?>
-
 <html>
 <head>
     <title>Doxtal</title>
@@ -11,20 +10,15 @@ session_start();
     <script src="resources/js/jquery.js"></script>
     <script src="resources/js/scripts.js"></script>
     <script src="resources/js/bootstrap.js"></script>
+    <script src="resources/js/npm.js"></script>
+
     <link rel="stylesheet" type="text/css" href="resources/css/mystyle.css">
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/infostyle.css">
 
     <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyDifaAcxog3tTMMvQoLz1leAr_Vh9Uq9Ms",
-            authDomain: "webhacks-caade.firebaseapp.com",
-            databaseURL: "https://webhacks-caade.firebaseio.com",
-            storageBucket: "",
-            messagingSenderId: "267096838240"
-        };
-        firebase.initializeApp(config);
+
     </script>
 </head>
 <body>
@@ -39,12 +33,14 @@ session_start();
             <button class = "signin" id="register">Register</button>
         </div>
     </div>
-    -->
+-->
+
+<!-- Navbar -->
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <h1 class = "title">doxtal.</h1>
-        <h1 class = "title"><b>me&nbsp&nbsp&nbsp</b></h1> <!--FIX THIS-->
+        <h1 class = "title"><b>me</b></h1> <!--FIX THIS-->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -56,10 +52,11 @@ session_start();
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="diag.php">Diagnostic</a></li>
-                <li class="active"><a href="#">Connect</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="diag.html">Diagnostic</a></li>
+                <li><a href="connect.html">Connect</a></li>
             </ul>
+
             <?php if($_SESSION["login"]):?>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -67,7 +64,7 @@ session_start();
                         <ul class="dropdown-menu">
                             <li><a href="history.php">History</a></li>
                             <li><a href="messages.php">Messages</a></li>
-                            <li><a href="accountinfo.php">Account Info</a></li>
+                            <li><a href="#"><b>Account Info</b></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -81,36 +78,72 @@ session_start();
                             </form>
                         </a></li>
                 </ul>
-                <div>
-                    <?php
-                    $tuser = $_POST["username"];
-                    $tpass = $_POST["password"];
-                    if( strcmp($tuser,$_SESSION["username"]))
-                    {
-                        if(strcmp($tpass,$_SESSION["password"])) {
-                            $_SESSION["login"] = true;
-                            header("Location:accountinfo.php");
-                        }
-                        else
-                        {
-                            echo "<script>alert(\"Wrong Password!\");</script>";
-                        }
-                    }
-                    else
-                    {
-                        echo "<script>alert(\"Wrong Username!\");</script>";
-                    }
-                    ?>
-                </div>>
             <?php endif ?>
         </div>
     </div>
 </div>
 
-<!--Important Part-->
+<!-- body start -->
 
+<div id = "container">
+    <div class = "box">
+        <div id = "centerfrac">
+            <div class = "box2a">
+                <h1>Account Info</h1><br>
+            </div>
+            <div id = "dinfo2">
+                <?php echo $_SESSION["username"]?><br>
+                <?php echo $_SESSION["password"]?><br>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="disease3a">
+    <div id="frac2a">
+        <div class="dname1a">
+            <h2>Sex</h2> <br>
+        </div>
+        <div id = "dinfo1">
+            <?php echo $_SESSION["sex"]?>
+        </div>
+    </div>
+</div>
 
+<div class="disease4a">
+    <div id="frac2a">
+        <div class="dname1a">
+            <h2>Age</h2><br>
+
+        </div>
+        <div id = "dinfo1">
+            <?php echo $_SESSION["age"]?>
+        </div>
+    </div>
+</div>
+
+<div class="disease5a">
+    <div id="frac2a">
+        <div class="dname1a">
+            <h2>Weight</h2><br>
+
+        </div>
+        <div id = "dinfo1">
+            <?php echo $_SESSION["weight"]?>
+        </div>
+    </div>
+</div>
+
+<div class="disease6a">
+    <div id="frac2a">
+        <div class="dname1a">
+            <h2>Allergies</h2><br>
+        </div>
+        <div id = "dinfo1">
+            <?php echo $_SESSION["allergy"]?>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>

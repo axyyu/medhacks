@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <html>
 <head>
     <title>Doxtal</title>
@@ -129,7 +133,7 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <h1 class = "title">doxtal.</h1>
-        <h1 class = "title"><b>me&nbsp&nbsp&nbsp</b></h1> <!--FIX THIS-->
+        <h1 class = "title"><b>me</b></h1> <!--FIX THIS-->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -145,15 +149,49 @@
                 <li class="active"><a href="#">Diagnostic</a></li>
                 <li><a href="connect.html">Connect</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">
-                        <form>
-                            <input type="text" name="username" placeholder="Username" required>
-                            <input type="password" name="password" placeholder="Password" required>
-                            <input type="submit" value="Login">
-                        </form>
-                    </a></li>
-            </ul>
+            <?php if($_SESSION["login"]):?>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="history.php">History</a></li>
+                            <li><a href="messages.php">Messages</a></li>
+                            <li><a href="accountinfo.php">Account Info</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <?php else:?>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">
+                            <form method="post">
+                                <input type="text" name="username" placeholder="Username" required>
+                                <input type="password" name="password" placeholder="Password" required>
+                                <input type="submit" value="Login">
+                            </form>
+                        </a></li>
+                </ul>
+                <div>
+                    <?php
+                    $tuser = $_POST["username"];
+                    $tpass = $_POST["password"];
+                    if( strcmp($tuser,$_SESSION["username"]))
+                    {
+                        if(strcmp($tpass,$_SESSION["password"])) {
+                            $_SESSION["login"] = true;
+                            header("Location:accountinfo.php");
+                        }
+                        else
+                        {
+                            echo "<script>alert(\"Wrong Password!\");</script>";
+                        }
+                    }
+                    else
+                    {
+                        echo "<script>alert(\"Wrong Username!\");</script>";
+                    }
+                    ?>
+                </div>>
+            <?php endif ?>
         </div>
     </div>
 </div>
@@ -164,17 +202,19 @@
         <div id = "centerfrac">
             <div class = "box2">
                 <div id = "symplist">
-                    <ul>
+                    <ul id = "symul">
                     </ul>
                 </div>
-                <p id = "symp">Enter your symptom here:</p>
-                <input id="symtext" class = "nodeinput" type="text" name="symptom" list="symptoms">
-                <br class="buttonbreak">
+                <div id="inpbox">
+                    <p id = "symp">Enter your symptom here:</p>
+                    <input id="symtext" class = "nodeinput" type="text" name="symptom" list="symptoms">
+                    <br class="buttonbreak">
+                </div>
                 <button id = "plus">+</button>
             </div>
         </div>
     </div>
-    <div class="disease1">
+    <div class="disease1" style="display: none;">
         <div id="frac2">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -182,10 +222,12 @@
                 </div>
                 Death <br>
                 The state of not being alive
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand1">+</button>
             </div>
         </div>
     </div>
-    <div class="disease2">
+    <div class="disease2" style="display: none;">
         <div id="frac2">
             <div class="dname1">
                 <div id = "dinfo2">
@@ -193,21 +235,24 @@
                 </div>
                 Life <br>
                 The state of not being dead
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand2">+</button>
             </div>
         </div>
     </div>
-    <div class="disease3">
+    <div class="disease3" style="display: none;">
         <div id="frac2">
             <div class="dname1">
                 <div id = "dinfo1">
-
                 </div>
                 Freshman <br>
                 The state of not being shafted
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand3">+</button>
             </div>
         </div>
     </div>
-    <div class="disease4">
+    <div class="disease4" style="display: none;">
         <div id="frac2">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -215,10 +260,12 @@
                 </div>
                 Junior <br>
                 The state of being shafted
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand4">+</button>
             </div>
         </div>
     </div>
-    <div class="disease5">
+    <div class="disease5" style="display: none;">
         <div id="frac2">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -226,10 +273,12 @@
                 </div>
                 Sophomore <br>
                 The state of being try-hard
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand5">+</button>
             </div>
         </div>
     </div>
-    <div class="disease6">
+    <div class="disease6" style="display: none;">
         <div id="frac2">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -237,10 +286,12 @@
                 </div>
                 Senior <br>
                 The state of being a slacker
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand6">+</button>
             </div>
         </div>
     </div>
-    <div class="contact1">
+    <div class="contact1" id="1" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -250,7 +301,7 @@
             </div>
         </div>
     </div>
-    <div class="contact2">
+    <div class="contact2" id="2" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -260,7 +311,7 @@
             </div>
         </div>
     </div>
-    <div class="contact3">
+    <div class="contact3" id="3" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -270,7 +321,7 @@
             </div>
         </div>
     </div>
-    <div class="contact4">
+    <div class="contact4" id="4" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -280,7 +331,7 @@
             </div>
         </div>
     </div>
-    <div class="contact5">
+    <div class="contact5" id="5" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -290,7 +341,7 @@
             </div>
         </div>
     </div>
-    <div class="contact6">
+    <div class="contact6" id="6" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -300,7 +351,7 @@
             </div>
         </div>
     </div>
-    <div class="contact7">
+    <div class="contact7" id="9" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -310,7 +361,7 @@
             </div>
         </div>
     </div>
-    <div class="contact8">
+    <div class="contact8" id="10" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -320,7 +371,7 @@
             </div>
         </div>
     </div>
-    <div class="contact9">
+    <div class="contact9" id="7" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -330,7 +381,7 @@
             </div>
         </div>
     </div>
-    <div class="contact10">
+    <div class="contact10" id="8" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -340,7 +391,7 @@
             </div>
         </div>
     </div>
-    <div class="contact11">
+    <div class="contact11" id="11" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -350,7 +401,7 @@
             </div>
         </div>
     </div>
-    <div class="contact12">
+    <div class="contact12" id="12" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
