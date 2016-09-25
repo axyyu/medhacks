@@ -120,10 +120,10 @@ function checkFunction(boo)
     $(".disease1").fadeIn(500);
     $(".disease5").fadeIn(1000);
     $(".disease3").fadeIn(1500);
-    if(map[s][5]!='undefined') {
+    if(map[s][3]!='undefined') {
       $(".disease2").fadeIn(2000);
     }
-    if(map[s][5]!='undefined') {
+    if(map[s][4]!='undefined') {
       $(".disease6").fadeIn(2000);
     }
     if(map[s][5]!='undefined') {
