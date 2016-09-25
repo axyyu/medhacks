@@ -176,7 +176,7 @@ if( $_SESSION["login"])
                 <img class="pk" src="female.png" width="50" height="70">
             </div>
         </div>
-        <form method="post" style="display:none;">
+        <form method="post" style="display:none;" id = "pickmw">
             <input id="chosex" name="sex" type="text">
         </form>
     </div>
@@ -250,11 +250,16 @@ if( $_SESSION["login"])
         $_SESSION["age"] = $_POST["Age"];
         $_SESSION["weight"] = $_POST["Weight"];
         $_SESSION["allergy"] = $_POST["Allergies"];
-        $_SESSION["risk"] = $_POST["Risks"];
 
-        $_SESSION["login"] = true;
-        print_r($_POST);
+        //print_r($_POST);
     }
+    ?>
+</div>
+<div class = "phpr">
+    <?php
+    $_SESSION["risk"] = $_POST["Risks"];
+
+    $_SESSION["login"] = true;
     ?>
 </div>
 

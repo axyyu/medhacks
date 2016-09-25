@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="477077b8-6ea4-462d-8a56-41c0bc05c265" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/history.php" afterPath="$PROJECT_DIR$/history.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/home.js" afterPath="$PROJECT_DIR$/resources/js/home.js" />
     </list>
@@ -28,18 +28,18 @@
       <file leaf-file-name="mystyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/css/mystyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-697">
+            <state relative-caret-position="-442">
               <caret line="10" column="2" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+            <state relative-caret-position="674">
+              <caret line="132" column="28" selection-start-line="132" selection-start-column="28" selection-end-line="132" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -48,14 +48,14 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="231" column="20" selection-start-line="231" selection-start-column="20" selection-end-line="231" selection-end-column="20" />
+            <state relative-caret-position="750">
+              <caret line="261" column="30" selection-start-line="261" selection-start-column="30" selection-end-line="261" selection-end-column="30" />
               <folding>
-                <marker date="1474800910014" expanded="true" signature="5192:5230" ph="..." />
-                <marker date="1474800910014" expanded="true" signature="5362:5400" ph="..." />
-                <marker date="1474800910014" expanded="true" signature="5536:5574" ph="..." />
-                <marker date="1474800910014" expanded="true" signature="5721:5759" ph="..." />
-                <marker date="1474800910014" expanded="true" signature="5894:5932" ph="..." />
+                <marker date="1474801612834" expanded="true" signature="5192:5230" ph="..." />
+                <marker date="1474801612834" expanded="true" signature="5362:5400" ph="..." />
+                <marker date="1474801612834" expanded="true" signature="5536:5574" ph="..." />
+                <marker date="1474801612834" expanded="true" signature="5721:5759" ph="..." />
+                <marker date="1474801612834" expanded="true" signature="5894:5932" ph="..." />
               </folding>
             </state>
           </provider>
@@ -64,8 +64,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learning-opentok-web-basics/web/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+            <state relative-caret-position="408">
+              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -81,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="history.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="history.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/history.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="155" column="27" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -151,10 +151,10 @@
         <option value="$PROJECT_DIR$/resources/css/mystyle.css" />
         <option value="$PROJECT_DIR$/diag.php" />
         <option value="$PROJECT_DIR$/accountinfo.php" />
-        <option value="$PROJECT_DIR$/history.php" />
         <option value="$PROJECT_DIR$/connect.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/resources/js/home.js" />
+        <option value="$PROJECT_DIR$/history.php" />
       </list>
     </option>
   </component>
@@ -347,12 +347,12 @@
       <workItem from="1474747711438" duration="12953000" />
       <workItem from="1474765112717" duration="3376000" />
       <workItem from="1474779667474" duration="7600000" />
-      <workItem from="1474798024048" duration="2896000" />
+      <workItem from="1474798024048" duration="3689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63589000" />
+    <option name="totallyTimeSpent" value="64382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -422,11 +422,11 @@
         <state relative-caret-position="1394">
           <caret line="82" column="7" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
           <folding>
-            <marker date="1474800910014" expanded="true" signature="5192:5230" ph="..." />
-            <marker date="1474800910014" expanded="true" signature="5362:5400" ph="..." />
-            <marker date="1474800910014" expanded="true" signature="5536:5574" ph="..." />
-            <marker date="1474800910014" expanded="true" signature="5721:5759" ph="..." />
-            <marker date="1474800910014" expanded="true" signature="5894:5932" ph="..." />
+            <marker date="1474801612834" expanded="true" signature="5192:5230" ph="..." />
+            <marker date="1474801612834" expanded="true" signature="5362:5400" ph="..." />
+            <marker date="1474801612834" expanded="true" signature="5536:5574" ph="..." />
+            <marker date="1474801612834" expanded="true" signature="5721:5759" ph="..." />
+            <marker date="1474801612834" expanded="true" signature="5894:5932" ph="..." />
           </folding>
         </state>
       </provider>
@@ -691,22 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/mystyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learning-opentok-web-basics/web/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/history.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -715,32 +699,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/history.php">
+    <entry file="file://$PROJECT_DIR$/learning-opentok-web-basics/web/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="408">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/mystyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="132" column="28" selection-start-line="132" selection-start-column="28" selection-end-line="132" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="231" column="20" selection-start-line="231" selection-start-column="20" selection-end-line="231" selection-end-column="20" />
+        <state relative-caret-position="750">
+          <caret line="261" column="30" selection-start-line="261" selection-start-column="30" selection-end-line="261" selection-end-column="30" />
           <folding>
-            <marker date="1474800910014" expanded="true" signature="5192:5230" ph="..." />
-            <marker date="1474800910014" expanded="true" signature="5362:5400" ph="..." />
-            <marker date="1474800910014" expanded="true" signature="5536:5574" ph="..." />
-            <marker date="1474800910014" expanded="true" signature="5721:5759" ph="..." />
-            <marker date="1474800910014" expanded="true" signature="5894:5932" ph="..." />
+            <marker date="1474801612834" expanded="true" signature="5192:5230" ph="..." />
+            <marker date="1474801612834" expanded="true" signature="5362:5400" ph="..." />
+            <marker date="1474801612834" expanded="true" signature="5536:5574" ph="..." />
+            <marker date="1474801612834" expanded="true" signature="5721:5759" ph="..." />
+            <marker date="1474801612834" expanded="true" signature="5894:5932" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/home.js">
+    <entry file="file://$PROJECT_DIR$/history.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+        <state relative-caret-position="187">
+          <caret line="155" column="27" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="27" />
           <folding />
         </state>
       </provider>

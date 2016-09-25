@@ -153,7 +153,7 @@ session_start();
 <div class="disease5a">
     <div id="frac2a">
         <div class="dname1a">
-            <h2>Heart Attack</h2><br>
+            <h2>Heart <br> Attack</h2><br>
 
         </div>
         <div id = "dinfo1">

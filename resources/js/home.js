@@ -18,8 +18,6 @@ $(document).ready(function(){
     });
     $("#continue_form").submit(function(e)
     {
-        $("#container").hide();
-        $("#container2").show();
         $.ajax({
             type: "POST",
             data:  $("#continue_form").serialize(),
@@ -30,24 +28,47 @@ $(document).ready(function(){
 
             }
         });
+        $("#container").hide();
+        $("#container2").show();
         return false;
     });
     $("#male").click(function()
     {
+
+        document.getElementById("chosex").innerHTML = "man";
+        $.ajax({
+            type: "POST",
+            data:  $("#pickmw").serialize(),
+
+            success: function(data){
+
+                $('.php').html(data);
+
+            }
+        });
         $("#container2").hide();
         $("#container3").show();
-        document.getElementById("chosex").innerHTML = "man";
     });
     $("#female").click(function()
     {
+
+        document.getElementById("chosex").innerHTML = "woman";
+        $.ajax({
+            type: "POST",
+            data:  $("#pickmw").serialize(),
+
+            success: function(data){
+
+                $('.php').html(data);
+
+            }
+        });
         $("#container2").hide();
         $("#container3").show();
-        document.getElementById("chosex").innerHTML = "woman";
     });
     $('#age').keypress(function (e) {
         if (e.which == 13) {
-            $("#container3").hide();
-            $("#container4").show();
+
             $.ajax({
                 type: "POST",
                 data:  $("#aform").serialize(),
@@ -58,13 +79,14 @@ $(document).ready(function(){
 
                 }
             });
+            $("#container3").hide();
+            $("#container4").show();
             return false;    //<---- Add this line
         }
     });
     $('#weight').keypress(function (e) {
         if (e.which == 13) {
-            $("#container4").hide();
-            $("#container5").show();
+
             $.ajax({
                 type: "POST",
                 data:  $("#wform").serialize(),
@@ -75,13 +97,14 @@ $(document).ready(function(){
 
                 }
             });
+            $("#container4").hide();
+            $("#container5").show();
             return false;    //<---- Add this line
         }
     });
     $('#allergy').keypress(function (e) {
         if (e.which == 13) {
-            $("#container5").hide();
-            $("#container6").show();
+
             $.ajax({
                 type: "POST",
                 data:  $("#gform").serialize(),
@@ -92,6 +115,8 @@ $(document).ready(function(){
 
                 }
             });
+            $("#container5").hide();
+            $("#container6").show();
             return false;    //<---- Add this line
         }
     });
@@ -105,7 +130,7 @@ $(document).ready(function(){
 
                 success: function(data){
 
-                    $('.php').html(data);
+                    $('.phpr').html(data);
 
                 }
             });
