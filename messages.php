@@ -6,8 +6,8 @@ session_start();
 <html>
 
 <head>
-    <title> OpenTok Getting Started </title>
-    <link href="/css/app.css" rel="stylesheet" type="text/css">
+    <title>Messages</title>
+    <link href="resources/css/messages.css" rel="stylesheet" type="text/css">
     <script src="resources/js/mess.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
@@ -30,7 +30,7 @@ session_start();
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="diag.php">Diagnostic</a></li>
-                <li class = "active"><a href="#">Connect</a></li>
+                <li class = "active"><a href="#" target="_blank">Connect</a></li>
             </ul>
 
             <?php if($_SESSION["login"]):?>
@@ -39,8 +39,8 @@ session_start();
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="history.php">History</a></li>
-                            <li><a href="messages.php">Messages</a></li>
-                            <li><a href="#"><b>Account Info</b></a></li>
+                            <li><a href="#">Messages</a></li>
+                            <li><a href="accountinfo.php"><b>Account Info</b></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -59,7 +59,31 @@ session_start();
     </div>
 </div>
 
+<?php
+if(!isset($_SESSION['name'])):
+?>
+    <div id="wrapper">
+        <div id="menu">
+            <p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
+            <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+            <div style="clear:both"></div>
+        </div>
+        <div id="chatbox"></div>
 
+        <form name="message" action="">
+            <input name="usermsg" type="text" id="usermsg" size="63" />
+            <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+        </form>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        // jQuery Document
+        $(document).ready(function(){
+        });
+    </script>
+    <?php
+endif
+?>
 </body>
 
 </html>

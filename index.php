@@ -75,7 +75,7 @@ if( $_SESSION["login"])
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="history.php">History</a></li>
-                    <li><a href="messages.php">Messages</a></li>
+                    <li><a href="messages.php" target="_blank">Messages</a></li>
                   <li><a href="accountinfo.php">Account Info</a></li>
                 </ul>
               </li>

@@ -72,7 +72,7 @@ session_start();
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="history.php">History</a></li>
-                            <li><a href="messages.php">Messages</a></li>
+                            <li><a href="messages.php" target="_blank">Messages</a></li>
                             <li><a href="#"><b>Account Info</b></a></li>
                         </ul>
                     </li>
