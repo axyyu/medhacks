@@ -10,7 +10,6 @@ session_start();
     <script src="resources/js/jquery.js"></script>
     <script src="resources/js/scripts.js"></script>
     <script src="resources/js/bootstrap.js"></script>
-    <script src="resources/js/npm.js"></script>
 
     <link rel="stylesheet" type="text/css" href="resources/css/mystyle.css">
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css">
@@ -52,9 +51,9 @@ session_start();
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="#">Home</a></li>
-                <li><a href="diag.html">Diagnostic</a></li>
-                <li><a href="connect.html">Connect</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="diag.php">Diagnostic</a></li>
+                <li><a href="connect.php">Connect</a></li>
             </ul>
 
             <?php if($_SESSION["login"]):?>

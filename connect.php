@@ -118,6 +118,8 @@ session_start();
     echo $_SESSION["risk"];
 
     echo $_SESSION["login"];
+
+    print_r($_SESSION);
 ?>
 </div>
 

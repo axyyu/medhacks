@@ -145,9 +145,9 @@ session_start();
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
-                <li ><a href="index.html">Home</a></li>
+                <li ><a href="index.php">Home</a></li>
                 <li class="active"><a href="#">Diagnostic</a></li>
-                <li><a href="connect.html">Connect</a></li>
+                <li><a href="connect.php">Connect</a></li>
             </ul>
             <?php if($_SESSION["login"]):?>
                 <ul class="nav navbar-nav navbar-right">
