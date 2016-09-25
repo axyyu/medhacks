@@ -34,7 +34,7 @@ session_start();
         <option value="Sweaty">
         <option value="Thirsty">
         <option value="Tired">
-        <option value="Weak">
+        <option value="Weakness or numbness">
         <option value="Hearing difficulty">
         <option value="Urine issues">
         <option value="Blurred vision">
