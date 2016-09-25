@@ -5,10 +5,11 @@ var apiKey,
 $(document).ready(function() {
   // Make an Ajax request to get the OpenTok API key, session ID, and token from the server
 
-  $.get('https://doxtaltok.herokuapp.com/session?callback=?', function(res) {
+  $.get('https://doxtaltok.herokuapp.com/session', function(res) {
     console.log(res);
     apiKey = res.apiKey;
     sessionId = res.sessionId;
+    token = res.token;
 
     initializeSession();
   });
@@ -18,6 +19,8 @@ function jsonCallback(res){
   apiKey = res.apiKey;
   sessionId = res.sessionId;
   token = res.token;
+
+  initializeSession();
 }
 function initializeSession() {
   var session = OT.initSession(apiKey, sessionId);
