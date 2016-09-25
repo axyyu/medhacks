@@ -193,25 +193,25 @@ session_start();
     </div>
     <div class="disease1" style="display: none;">
         <div id="frac2">
-            <div class="dname1">
+            <div class="ddd">
                 <div id = "dinfo1">
 
                 </div>
-                 <br>
-
-                <br class="buttonbreak">
+                <p id="d1">Death <br>
+                    The state of not being alive
+                    <br class="buttonbreak"></p>
                 <button class="diseasebut"id = "expand1">+</button>
             </div>
         </div>
     </div>
     <div class="disease2" style="display: none;">
         <div id="frac2">
-            <div class="dname1">
+            <div class="ddd">
                 <div id = "dinfo2">
 
                 </div>
-                 <br>
-
+                <p id="d2">Life <br>
+                    The state of not being alive</p>
                 <br class="buttonbreak">
                 <button class="diseasebut"id = "expand2">+</button>
             </div>
@@ -219,11 +219,11 @@ session_start();
     </div>
     <div class="disease3" style="display: none;">
         <div id="frac2">
-            <div class="dname1">
+            <div class="ddd">
                 <div id = "dinfo1">
                 </div>
-                 <br>
-
+                <p id="d3">Freshman <br>
+                    The state of not being shafted</p>
                 <br class="buttonbreak">
                 <button class="diseasebut"id = "expand3">+</button>
             </div>
@@ -231,12 +231,12 @@ session_start();
     </div>
     <div class="disease4" style="display: none;">
         <div id="frac2">
-            <div class="dname1">
+            <div class="ddd">
                 <div id = "dinfo1">
 
                 </div>
-                 <br>
-
+                <p id="d4">Junior <br>
+                    The state of being shafted</p>
                 <br class="buttonbreak">
                 <button class="diseasebut"id = "expand4">+</button>
             </div>
@@ -244,12 +244,12 @@ session_start();
     </div>
     <div class="disease5" style="display: none;">
         <div id="frac2">
-            <div class="dname1">
+            <div class="ddd">
                 <div id = "dinfo1">
 
                 </div>
-                 <br>
-
+                <p id="d5">Sophomore <br>
+                    The state of being try-hard</p>
                 <br class="buttonbreak">
                 <button class="diseasebut"id = "expand5">+</button>
             </div>
@@ -257,12 +257,12 @@ session_start();
     </div>
     <div class="disease6" style="display: none;">
         <div id="frac2">
-            <div class="dname1">
+            <div class="ddd">
                 <div id = "dinfo1">
 
                 </div>
-                 <br>
-
+                <p id="d6">Senior <br>
+                    The state of being a slacker</p>
                 <br class="buttonbreak">
                 <button class="diseasebut"id = "expand6">+</button>
             </div>
