@@ -91,6 +91,7 @@
   <option value="Wheezing">
   <option value="Infertillity">
 </datalist>
+    <script src="resources/js/scripts.js"></script>
     <script src="resources/js/bootstrap.js"></script>
     <script src="resources/js/npm.js"></script>
     <link rel="stylesheet" type="text/css" href="resources/css/mystyle.css">
@@ -128,7 +129,7 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <h1 class = "title">doxtal.</h1>
-        <h1 class = "title"><b>me&nbsp&nbsp&nbsp</b></h1> <!--FIX THIS-->
+        <h1 class = "title"><b>me</b></h1> <!--FIX THIS-->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -163,19 +164,19 @@
         <div id = "centerfrac">
             <div class = "box2">
                 <div id = "symplist">
-                    <ul>
+                    <ul id = "symul">
                     </ul>
                 </div>
+                <div id="inpbox">
                 <p id = "symp">Enter your symptom here:</p>
-                <form id="sympinput" autocomplete="off">
                 <input id="symtext" class = "nodeinput" type="text" name="symptom" list="symptoms">
-                </form>
                 <br class="buttonbreak">
+              </div>
                 <button id = "plus">+</button>
             </div>
         </div>
     </div>
-    <div class="disease1">
+    <div class="disease1" style="display: none;">
         <div id="frac2">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -183,10 +184,12 @@
                 </div>
                 Death <br>
                 The state of not being alive
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand1">+</button>
             </div>
         </div>
     </div>
-    <div class="disease2">
+    <div class="disease2" style="display: none;">
         <div id="frac2">
             <div class="dname1">
                 <div id = "dinfo2">
@@ -194,21 +197,24 @@
                 </div>
                 Life <br>
                 The state of not being dead
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand2">+</button>
             </div>
         </div>
     </div>
-    <div class="disease3">
+    <div class="disease3" style="display: none;">
         <div id="frac2">
             <div class="dname1">
                 <div id = "dinfo1">
-
                 </div>
                 Freshman <br>
                 The state of not being shafted
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand3">+</button>
             </div>
         </div>
     </div>
-    <div class="disease4">
+    <div class="disease4" style="display: none;">
         <div id="frac2">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -216,10 +222,12 @@
                 </div>
                 Junior <br>
                 The state of being shafted
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand4">+</button>
             </div>
         </div>
     </div>
-    <div class="disease5">
+    <div class="disease5" style="display: none;">
         <div id="frac2">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -227,10 +235,12 @@
                 </div>
                 Sophomore <br>
                 The state of being try-hard
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand5">+</button>
             </div>
         </div>
     </div>
-    <div class="disease6">
+    <div class="disease6" style="display: none;">
         <div id="frac2">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -238,40 +248,22 @@
                 </div>
                 Senior <br>
                 The state of being a slacker
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand6">+</button>
             </div>
         </div>
     </div>
-    <div class="contact1">
+    <div class="contact1" id="1" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
 
                 </div>
-                Contact a doctor 
+                Contact a doctor
             </div>
         </div>
     </div>
-    <div class="contact2">
-        <div id="frac3">
-            <div class="dname1">
-                <div id = "dinfo1">
-
-                </div>
-                Prescription
-            </div>
-        </div>
-    </div>
-    <div class="contact3">
-        <div id="frac3">
-            <div class="dname1">
-                <div id = "dinfo1">
-
-                </div>
-                Contact a doctor 
-            </div>
-        </div>
-    </div>
-    <div class="contact4">
+    <div class="contact2" id="2" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -281,37 +273,17 @@
             </div>
         </div>
     </div>
-    <div class="contact5">
+    <div class="contact3" id="3" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
 
                 </div>
-                Contact a doctor 
+                Contact a doctor
             </div>
         </div>
     </div>
-    <div class="contact6">
-        <div id="frac3">
-            <div class="dname1">
-                <div id = "dinfo1">
-
-                </div>
-                Prescription
-            </div>
-        </div>
-    </div>
-    <div class="contact7">
-        <div id="frac3">
-            <div class="dname1">
-                <div id = "dinfo1">
-
-                </div>
-                Contact a doctor 
-            </div>
-        </div>
-    </div>
-    <div class="contact8">
+    <div class="contact4" id="4" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -321,17 +293,17 @@
             </div>
         </div>
     </div>
-    <div class="contact9">
+    <div class="contact5" id="5" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
 
                 </div>
-                Contact a doctor 
+                Contact a doctor
             </div>
         </div>
     </div>
-    <div class="contact10">
+    <div class="contact6" id="6" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
@@ -341,17 +313,57 @@
             </div>
         </div>
     </div>
-    <div class="contact11">
+    <div class="contact7" id="9" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
 
                 </div>
-                Contact a doctor 
+                Contact a doctor
             </div>
         </div>
     </div>
-    <div class="contact12">
+    <div class="contact8" id="10" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Prescription
+            </div>
+        </div>
+    </div>
+    <div class="contact9" id="7" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Contact a doctor
+            </div>
+        </div>
+    </div>
+    <div class="contact10" id="8" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Prescription
+            </div>
+        </div>
+    </div>
+    <div class="contact11" id="11" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Contact a doctor
+            </div>
+        </div>
+    </div>
+    <div class="contact12" id="12" style="display: none;">
         <div id="frac3">
             <div class="dname1">
                 <div id = "dinfo1">
