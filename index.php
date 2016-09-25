@@ -86,7 +86,7 @@ if( $_SESSION["login"])
                     if (strcmp($tuser, $_SESSION["username"])) {
                         if (strcmp($tpass, $_SESSION["password"])) {
                             $_SESSION["login"] = true;
-                            header("Location:accountinfo.php");
+                            //header("Location:accountinfo.php");
                         } else {
                             echo "Wrong Password!";
                         }
@@ -246,7 +246,7 @@ if( $_SESSION["login"])
     $_SESSION["risk"] = $_POST["Risksy"];
 
     $_SESSION["login"] = true;
-    header("Location:accountinfo.php");
+    //header("Location:accountinfo.php");
     ?>
 </div>
 
