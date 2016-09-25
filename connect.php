@@ -120,6 +120,7 @@ session_start();
     echo $_SESSION["login"];
 
     print_r($_SESSION);
+    print_r($_POST);
 ?>
 </div>
 

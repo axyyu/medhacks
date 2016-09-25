@@ -249,6 +249,7 @@ if(isset($_POST['Allergies'])) {
     $_SESSION["risk"] = $_POST["Risks"];
 
     $_SESSION["login"] = true;
+    print_r($_POST);
 }
 ?>
 

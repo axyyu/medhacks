@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="477077b8-6ea4-462d-8a56-41c0bc05c265" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/home.js" afterPath="$PROJECT_DIR$/resources/js/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connect.php" afterPath="$PROJECT_DIR$/connect.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="medhacks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,31 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-281">
-              <caret line="114" column="36" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="36" />
-              <folding>
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1474784273237" expanded="true" signature="4705:4731" ph="..." />
-                <marker date="1474784273237" expanded="false" signature="4783:4797" ph="..." />
-                <marker date="1474784273237" expanded="true" signature="5189:5227" ph="..." />
-                <marker date="1474784273237" expanded="true" signature="5359:5397" ph="..." />
-                <marker date="1474784273237" expanded="true" signature="5529:5567" ph="..." />
-                <marker date="1474784273237" expanded="true" signature="5710:5748" ph="..." />
-                <marker date="1474784273237" expanded="true" signature="5883:5921" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="mystyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/css/mystyle.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,12 +34,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="782">
               <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="251" column="20" selection-start-line="251" selection-start-column="20" selection-end-line="251" selection-end-column="20" />
+              <folding>
+                <marker date="1474785768996" expanded="true" signature="5189:5227" ph="..." />
+                <marker date="1474785768996" expanded="true" signature="5359:5397" ph="..." />
+                <marker date="1474785768996" expanded="true" signature="5529:5567" ph="..." />
+                <marker date="1474785768996" expanded="true" signature="5710:5748" ph="..." />
+                <marker date="1474785768996" expanded="true" signature="5883:5921" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,8 +73,8 @@
       <file leaf-file-name="connect.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="121" column="23" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="23" />
+            <state relative-caret-position="699">
+              <caret line="122" column="20" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -126,11 +118,11 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/MyAccount_dropdown.html" />
         <option value="$PROJECT_DIR$/resources/css/mystyle.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/diag.php" />
         <option value="$PROJECT_DIR$/accountinfo.php" />
-        <option value="$PROJECT_DIR$/connect.php" />
         <option value="$PROJECT_DIR$/resources/js/home.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/connect.php" />
       </list>
     </option>
   </component>
@@ -404,12 +396,12 @@
       <workItem from="1474745119678" duration="1154000" />
       <workItem from="1474747711438" duration="12953000" />
       <workItem from="1474765112717" duration="3376000" />
-      <workItem from="1474779667474" duration="5821000" />
+      <workItem from="1474779667474" duration="6126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58914000" />
+    <option name="totallyTimeSpent" value="59219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -662,14 +654,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/npm.js" />
-    <entry file="file://$PROJECT_DIR$/SampleAvatar/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -765,41 +749,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/accountinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-281">
-          <caret line="114" column="36" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1474784273237" expanded="true" signature="4705:4731" ph="..." />
-            <marker date="1474784273237" expanded="false" signature="4783:4797" ph="..." />
-            <marker date="1474784273237" expanded="true" signature="5189:5227" ph="..." />
-            <marker date="1474784273237" expanded="true" signature="5359:5397" ph="..." />
-            <marker date="1474784273237" expanded="true" signature="5529:5567" ph="..." />
-            <marker date="1474784273237" expanded="true" signature="5710:5748" ph="..." />
-            <marker date="1474784273237" expanded="true" signature="5883:5921" ph="..." />
-          </folding>
+        <state relative-caret-position="326">
+          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleAvatar/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="121" column="23" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accountinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+        <state relative-caret-position="699">
+          <caret line="122" column="20" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -812,11 +789,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/home.js">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="665">
+          <caret line="251" column="20" selection-start-line="251" selection-start-column="20" selection-end-line="251" selection-end-column="20" />
+          <folding>
+            <marker date="1474785768996" expanded="true" signature="5189:5227" ph="..." />
+            <marker date="1474785768996" expanded="true" signature="5359:5397" ph="..." />
+            <marker date="1474785768996" expanded="true" signature="5529:5567" ph="..." />
+            <marker date="1474785768996" expanded="true" signature="5710:5748" ph="..." />
+            <marker date="1474785768996" expanded="true" signature="5883:5921" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
