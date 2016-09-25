@@ -29,6 +29,10 @@ $(document).ready(function(){
             }
         });
         $("#container").hide();
+        $("#container3").hide();
+        $("#container4").hide();
+        $("#container5").hide();
+        $("#container6").hide();
         $("#container2").show();
         return false;
     });
@@ -46,8 +50,12 @@ $(document).ready(function(){
 
             }
         });
-        $("#container2").hide();
+        $("#container").hide();
         $("#container3").show();
+        $("#container4").hide();
+        $("#container5").hide();
+        $("#container6").hide();
+        $("#container2").hide();
     });
     $("#female").click(function()
     {
@@ -63,15 +71,19 @@ $(document).ready(function(){
 
             }
         });
-        $("#container2").hide();
+        $("#container").hide();
         $("#container3").show();
+        $("#container4").hide();
+        $("#container5").hide();
+        $("#container6").hide();
+        $("#container2").hide();
     });
     $('#age').keypress(function (e) {
         if (e.which == 13) {
-
+            dat = document.getElementById("age").value;
             $.ajax({
                 type: "POST",
-                data:  $("#aform").serialize(),
+                data:  dat,
 
                 success: function(data){
 
@@ -79,17 +91,21 @@ $(document).ready(function(){
 
                 }
             });
+            $("#container").hide();
             $("#container3").hide();
             $("#container4").show();
+            $("#container5").hide();
+            $("#container6").hide();
+            $("#container2").hide();
             return false;    //<---- Add this line
         }
     });
     $('#weight').keypress(function (e) {
         if (e.which == 13) {
-
+            dat = document.getElementById("weight").value;
             $.ajax({
                 type: "POST",
-                data:  $("#wform").serialize(),
+                data:  dat,
 
                 success: function(data){
 
@@ -97,17 +113,21 @@ $(document).ready(function(){
 
                 }
             });
+            $("#container").hide();
+            $("#container3").hide();
             $("#container4").hide();
             $("#container5").show();
+            $("#container6").hide();
+            $("#container2").hide();
             return false;    //<---- Add this line
         }
     });
     $('#allergy').keypress(function (e) {
         if (e.which == 13) {
-
+            dat = document.getElementById("allergy").value;
             $.ajax({
                 type: "POST",
-                data:  $("#gform").serialize(),
+                data:  dat,
 
                 success: function(data){
 
@@ -115,8 +135,12 @@ $(document).ready(function(){
 
                 }
             });
+            $("#container").hide();
+            $("#container3").hide();
+            $("#container4").hide();
             $("#container5").hide();
             $("#container6").show();
+            $("#container2").hide();
             return false;    //<---- Add this line
         }
     });
@@ -124,9 +148,10 @@ $(document).ready(function(){
     {
         if(e.which == 13)
         {
+            dat = document.getElementById("risk").value;
             $.ajax({
                 type: "POST",
-                data:  $("#rform").serialize(),
+                data:  dat,
 
                 success: function(data){
 
@@ -134,6 +159,12 @@ $(document).ready(function(){
 
                 }
             });
+            $("#container").hide();
+            $("#container3").hide();
+            $("#container4").hide();
+            $("#container5").hide();
+            $("#container6").hide();
+            $("#container2").hide();
         }
     });
 

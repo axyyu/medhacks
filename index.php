@@ -177,7 +177,7 @@ if( $_SESSION["login"])
             </div>
         </div>
         <form method="post" style="display:none;" id = "pickmw">
-            <input id="chosex" name="sex" type="text">
+            <input id="chosex" name="sexy" type="text">
         </form>
     </div>
 </div>
@@ -189,7 +189,7 @@ if( $_SESSION["login"])
                 <h1>Your age?</h1>
                 <br>
                 <form class = "stalone" method="post" id="aform">
-                    <input class="nodeinput signUpColor" id="age" type="text" name="Age" placeholder="Age"autofocus>
+                    <input class="nodeinput signUpColor" id="age" type="text" name="Agey" placeholder="Age"autofocus>
                 </form>
             </div>
         </div>
@@ -203,7 +203,7 @@ if( $_SESSION["login"])
                 <h1>Your weight(lb)?</h1>
                 <br>
                 <form class = "stalone" method="post" id="wform">
-                    <input class="nodeinput signUpColor" id="weight" type="text" name="Weight" placeholder="Weight" autofocus>
+                    <input class="nodeinput signUpColor" id="weight" type="text" name="Weighty" placeholder="Weight" autofocus>
                 </form>
             </div>
         </div>
@@ -217,7 +217,7 @@ if( $_SESSION["login"])
                 <h1>Any allergies?</h1>
                 <br>
                 <form class = "stalone" method="post" id="gform">
-                    <input class="nodeinput signUpColor" id="allergy" type="text" name="Allergies" placeholder="Allergies" autofocus>
+                    <input class="nodeinput signUpColor" id="allergy" type="text" name="Allergiesy" placeholder="Allergies" autofocus>
                 </form>
             </div>
         </div>
@@ -231,7 +231,7 @@ if( $_SESSION["login"])
                 <h1>Any other risk factors?</h1>
                 <br>
                 <form class = "stalone" action="diag.php" method="post" id="rform">
-                    <input class="nodeinput signUpColor" id="risk" type="text" name="Risks" placeholder="Risks" autofocus>
+                    <input class="nodeinput signUpColor" id="risk" type="text" name="Risksy" placeholder="Risks" autofocus>
                 </form>
             </div>
         </div>
@@ -246,10 +246,10 @@ if( $_SESSION["login"])
         $_SESSION["username"] = $_POST["user"];
         $_SESSION["password"] = $_POST["pass"];
         $_SESSION["email"] = $_POST["email"];
-        $_SESSION["sex"] = $_POST["sex"];
-        $_SESSION["age"] = $_POST["Age"];
-        $_SESSION["weight"] = $_POST["Weight"];
-        $_SESSION["allergy"] = $_POST["Allergies"];
+        $_SESSION["sex"] = $_POST["sexy"];
+        $_SESSION["age"] = $_POST["Agey"];
+        $_SESSION["weight"] = $_POST["Weighty"];
+        $_SESSION["allergy"] = $_POST["Allergiesy"];
 
         //print_r($_POST);
     }
@@ -257,7 +257,7 @@ if( $_SESSION["login"])
 </div>
 <div class = "phpr">
     <?php
-    $_SESSION["risk"] = $_POST["Risks"];
+    $_SESSION["risk"] = $_POST["Risksy"];
 
     $_SESSION["login"] = true;
     ?>
