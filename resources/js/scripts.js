@@ -111,14 +111,14 @@ $(document).ready(function()
     {
       $(".contact"+i).click(function()
       {
-        window.location.replace("../../prescription.php");
+        window.location.replace("../../prescriptions.php");
       });
     }
     else
     {
       $(".contact"+i).click(function()
       {
-        window.location.replace("../../doctor.php");
+        window.location.replace("../../doctors.php");
       });
     }
   }
