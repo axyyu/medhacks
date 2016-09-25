@@ -11,6 +11,7 @@ $("#container2").hide();
 */
 $(document).ready(function(){
 
+    $(document).click(function(){$("#boxx2").attr("style", "display:none");});
     $("#signup").click(function()
     {
         $("#container").show();
