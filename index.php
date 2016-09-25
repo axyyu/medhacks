@@ -79,7 +79,7 @@
 </div>
 
 <div id = "container" style="display: none;">
-    <div class = "box">
+    <div class = "boxx">
         <div id = "centerfracup">
             <div class = "box2">
                 <div id = "symplist">
@@ -107,7 +107,7 @@
                         <input class="nodeinput signUpColor" type="email" name="email" placeholder="Email"><br>
                     </label><br>
                     <label>
-                        <input class="nodeinput signUpColor" id ="continue" type="submit" value="Continue">
+                        <input class="nodeinput signUpColor" id ="continue" type="submit" value="Next">
                     </label>
                 </form>
             </div>
@@ -129,42 +129,50 @@
 </div>
 
 <div id = "container3" style="display: none;">
-    <div class = "boxu2">
+    <div class = "box">
+        <div class = "circle">
             <h1>Your age?</h1>
             <br>
         <form class = "stalone">
             <input class="nodeinput signUpColor" id="age" type="text" name="Age" placeholder="Age">
         </form>
+            </div>
     </div>
 </div>
 
 <div id = "container4" style="display: none;">
-    <div class = "boxu3" id="boxex">
+    <div class = "box">
+        <div class = "circle">
         <h1>Your weight?</h1>
         <br>
         <form class = "stalone">
             <input class="nodeinput signUpColor" id="weight" type="text" name="Weight" placeholder="Weight">
         </form>
+            </div>
     </div>
 </div>
 
 <div id = "container5" style="display: none;">
-    <div class = "boxu4" id="boxex">
+    <div class = "boxu4">
+        <div class = "circle">
         <h1>Any allergies?</h1>
         <br>
         <form class = "stalone">
             <input class="nodeinput signUpColor" id="allergy" type="text" name="Weight" placeholder="Weight">
         </form>
+            </div>
     </div>
 </div>
 
 <div id = "container6" style="display: none;">
-    <div class = "boxu5" id="boxex">
+    <div class = "boxu5">
+        <div class = "circle">
         <h1>Any other risk factors?</h1>
         <br>
         <form class = "stalone" action="diag.php">
             <input class="nodeinput signUpColor" id="risk" type="text" name="Risks" placeholder="Risks">
         </form>
+            </div>
     </div>
 </div>
 

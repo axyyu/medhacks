@@ -39,7 +39,7 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <h1 class = "title">doxtal.</h1>
-        <h1 class = "title"><b>me</b></h1> <!--FIX THIS-->
+        <h1 class = "title"><b>me&nbsp&nbsp&nbsp</b></h1> <!--FIX THIS-->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -52,7 +52,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="daig.php">Diagnostic</a></li>
+                <li><a href="diag.php">Diagnostic</a></li>
                 <li class="active"><a href="#">Connect</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
