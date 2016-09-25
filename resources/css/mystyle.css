@@ -504,6 +504,16 @@ body{
     top:50%;
     transform: translateY(-50%);
     text-align: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.ddd
+{
+    position: relative;
+    top:65%;
+    transform: translateY(-60%);
+    text-align: center;
+        
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 .dname1
 {
