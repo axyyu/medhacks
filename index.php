@@ -8,23 +8,7 @@ if( $_SESSION["login"])
 ?>
 <html>
 
-<?php
-// Set session variables
-if(!empty($_POST['user'])) {
-    $_SESSION["type"] = $_POST['type'];
-    $_SESSION["username"] = $_POST["user"];
-    $_SESSION["password"] = $_POST["pass"];
-    $_SESSION["email"] = $_POST["email"];
-    $_SESSION["sex"] = $_POST["sex"];
-    $_SESSION["age"] = $_POST["Age"];
-    $_SESSION["weight"] = $_POST["Weight"];
-    $_SESSION["allergy"] = $_POST["Allergies"];
-    $_SESSION["risk"] = $_POST["Risks"];
 
-    $_SESSION["login"] = true;
-    print_r($_POST);
-}
-?>
 
 <head>
     <title>Doxtal</title>
@@ -204,7 +188,7 @@ if(!empty($_POST['user'])) {
             <div class = "box2">
                 <h1>Your age?</h1>
                 <br>
-                <form class = "stalone" method="post">
+                <form class = "stalone" method="post" id="aform">
                     <input class="nodeinput signUpColor" id="age" type="text" name="Age" placeholder="Age"autofocus>
                 </form>
             </div>
@@ -218,7 +202,7 @@ if(!empty($_POST['user'])) {
             <div class = "box2">
                 <h1>Your weight(lb)?</h1>
                 <br>
-                <form class = "stalone" method="post">
+                <form class = "stalone" method="post" id="wform">
                     <input class="nodeinput signUpColor" id="weight" type="text" name="Weight" placeholder="Weight" autofocus>
                 </form>
             </div>
@@ -232,7 +216,7 @@ if(!empty($_POST['user'])) {
             <div class = "box2">
                 <h1>Any allergies?</h1>
                 <br>
-                <form class = "stalone" method="post">
+                <form class = "stalone" method="post" id="gform">
                     <input class="nodeinput signUpColor" id="allergy" type="text" name="Allergies" placeholder="Allergies" autofocus>
                 </form>
             </div>
@@ -246,7 +230,7 @@ if(!empty($_POST['user'])) {
             <div class = "box2">
                 <h1>Any other risk factors?</h1>
                 <br>
-                <form class = "stalone" action="diag.php" method="post">
+                <form class = "stalone" action="diag.php" method="post" id="rform">
                     <input class="nodeinput signUpColor" id="risk" type="text" name="Risks" placeholder="Risks" autofocus>
                 </form>
             </div>
@@ -254,7 +238,25 @@ if(!empty($_POST['user'])) {
     </div>
 </div>
 
+<div class="php">
+    <?php
+    // Set session variables
+    if(!empty($_POST['user'])) {
+        $_SESSION["type"] = $_POST['type'];
+        $_SESSION["username"] = $_POST["user"];
+        $_SESSION["password"] = $_POST["pass"];
+        $_SESSION["email"] = $_POST["email"];
+        $_SESSION["sex"] = $_POST["sex"];
+        $_SESSION["age"] = $_POST["Age"];
+        $_SESSION["weight"] = $_POST["Weight"];
+        $_SESSION["allergy"] = $_POST["Allergies"];
+        $_SESSION["risk"] = $_POST["Risks"];
 
+        $_SESSION["login"] = true;
+        print_r($_POST);
+    }
+    ?>
+</div>
 
 
 </body>

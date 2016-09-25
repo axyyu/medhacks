@@ -20,6 +20,16 @@ $(document).ready(function(){
     {
         $("#container").hide();
         $("#container2").show();
+        $.ajax({
+            type: "POST",
+            data:  $("#continue_form").serialize(),
+
+            success: function(data){
+
+                $('.php').html(data);
+
+            }
+        });
         return false;
     });
     $("#male").click(function()
@@ -38,6 +48,16 @@ $(document).ready(function(){
         if (e.which == 13) {
             $("#container3").hide();
             $("#container4").show();
+            $.ajax({
+                type: "POST",
+                data:  $("#aform").serialize(),
+
+                success: function(data){
+
+                    $('.php').html(data);
+
+                }
+            });
             return false;    //<---- Add this line
         }
     });
@@ -45,6 +65,16 @@ $(document).ready(function(){
         if (e.which == 13) {
             $("#container4").hide();
             $("#container5").show();
+            $.ajax({
+                type: "POST",
+                data:  $("#wform").serialize(),
+
+                success: function(data){
+
+                    $('.php').html(data);
+
+                }
+            });
             return false;    //<---- Add this line
         }
     });
@@ -52,7 +82,33 @@ $(document).ready(function(){
         if (e.which == 13) {
             $("#container5").hide();
             $("#container6").show();
+            $.ajax({
+                type: "POST",
+                data:  $("#gform").serialize(),
+
+                success: function(data){
+
+                    $('.php').html(data);
+
+                }
+            });
             return false;    //<---- Add this line
+        }
+    });
+    $('#risk').keypress(function (e)
+    {
+        if(e.which == 13)
+        {
+            $.ajax({
+                type: "POST",
+                data:  $("#rform").serialize(),
+
+                success: function(data){
+
+                    $('.php').html(data);
+
+                }
+            });
         }
     });
 
