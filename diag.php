@@ -172,25 +172,22 @@ session_start();
                 </ul>
                 <div>
                     <?php
-                    $tuser = $_POST["username"];
-                    $tpass = $_POST["password"];
-                    if( strcmp($tuser,$_SESSION["username"]))
-                    {
-                        if(strcmp($tpass,$_SESSION["password"])) {
-                            $_SESSION["login"] = true;
-                            header("Location:accountinfo.php");
+                    if(isset($_POST['username'])) {
+                        $tuser = $_POST["username"];
+                        $tpass = $_POST["password"];
+                        if (strcmp($tuser, $_SESSION["username"])) {
+                            if (strcmp($tpass, $_SESSION["password"])) {
+                                $_SESSION["login"] = true;
+                                header("Location:accountinfo.php");
+                            } else {
+                                echo "<script>alert(\"Wrong Password!\");</script>";
+                            }
+                        } else {
+                            echo "<script>alert(\"Wrong Username!\");</script>";
                         }
-                        else
-                        {
-                            echo "<script>alert(\"Wrong Password!\");</script>";
-                        }
-                    }
-                    else
-                    {
-                        echo "<script>alert(\"Wrong Username!\");</script>";
                     }
                     ?>
-                </div>>
+                </div>
             <?php endif ?>
         </div>
     </div>
@@ -207,7 +204,7 @@ session_start();
                 </div>
                 <div id="inpbox">
                     <p id = "symp">Enter your symptom here:</p>
-                    <input id="symtext" class = "nodeinput" type="text" name="symptom" list="symptoms">
+                    <input id="symtext" class = "nodeinput" type="text" name="symptom" list="symptoms" autocomplete="off">
                     <br class="buttonbreak">
                 </div>
                 <button id = "plus">+</button>
@@ -220,8 +217,8 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Death <br>
-                The state of not being alive
+                 <br>
+
                 <br class="buttonbreak">
                 <button class="diseasebut"id = "expand1">+</button>
             </div>
@@ -233,8 +230,8 @@ session_start();
                 <div id = "dinfo2">
 
                 </div>
-                Life <br>
-                The state of not being dead
+                 <br>
+
                 <br class="buttonbreak">
                 <button class="diseasebut"id = "expand2">+</button>
             </div>
@@ -245,8 +242,8 @@ session_start();
             <div class="dname1">
                 <div id = "dinfo1">
                 </div>
-                Freshman <br>
-                The state of not being shafted
+                 <br>
+
                 <br class="buttonbreak">
                 <button class="diseasebut"id = "expand3">+</button>
             </div>
@@ -258,8 +255,8 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Junior <br>
-                The state of being shafted
+                 <br>
+
                 <br class="buttonbreak">
                 <button class="diseasebut"id = "expand4">+</button>
             </div>
@@ -271,8 +268,8 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Sophomore <br>
-                The state of being try-hard
+                 <br>
+
                 <br class="buttonbreak">
                 <button class="diseasebut"id = "expand5">+</button>
             </div>
@@ -284,8 +281,8 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Senior <br>
-                The state of being a slacker
+                 <br>
+
                 <br class="buttonbreak">
                 <button class="diseasebut"id = "expand6">+</button>
             </div>
@@ -297,7 +294,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Contact a doctor
+
             </div>
         </div>
     </div>
@@ -307,7 +304,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Prescription
+
             </div>
         </div>
     </div>
@@ -317,7 +314,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Contact a doctor
+
             </div>
         </div>
     </div>
@@ -327,7 +324,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Prescription
+
             </div>
         </div>
     </div>
@@ -337,7 +334,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Contact a doctor
+
             </div>
         </div>
     </div>
@@ -347,7 +344,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Prescription
+
             </div>
         </div>
     </div>
@@ -357,7 +354,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Contact a doctor
+
             </div>
         </div>
     </div>
@@ -367,7 +364,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Prescription
+
             </div>
         </div>
     </div>
@@ -377,7 +374,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Contact a doctor
+
             </div>
         </div>
     </div>
@@ -387,7 +384,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Prescription
+
             </div>
         </div>
     </div>
@@ -397,7 +394,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Contact a doctor
+
             </div>
         </div>
     </div>
@@ -407,7 +404,7 @@ session_start();
                 <div id = "dinfo1">
 
                 </div>
-                Prescription
+
             </div>
         </div>
     </div>

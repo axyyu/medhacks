@@ -83,32 +83,43 @@ session_start();
                 </ul>
                 <div>
                     <?php
-                    $tuser = $_POST["username"];
-                    $tpass = $_POST["password"];
-                    if( strcmp($tuser,$_SESSION["username"]))
-                    {
-                        if(strcmp($tpass,$_SESSION["password"])) {
-                            $_SESSION["login"] = true;
-                            header("Location:accountinfo.php");
+                    if(isset($_POST['username'])) {
+                        $tuser = $_POST["username"];
+                        $tpass = $_POST["password"];
+                        if (strcmp($tuser, $_SESSION["username"])) {
+                            if (strcmp($tpass, $_SESSION["password"])) {
+                                $_SESSION["login"] = true;
+                                header("Location:accountinfo.php");
+                            } else {
+                                echo "<script>alert(\"Wrong Password!\");</script>";
+                            }
+                        } else {
+                            echo "<script>alert(\"Wrong Username!\");</script>";
                         }
-                        else
-                        {
-                            echo "<script>alert(\"Wrong Password!\");</script>";
-                        }
-                    }
-                    else
-                    {
-                        echo "<script>alert(\"Wrong Username!\");</script>";
                     }
                     ?>
-                </div>>
+                </div>
             <?php endif ?>
         </div>
     </div>
 </div>
 
 <!--Important Part-->
+<div>
+    <?php
+    echo $_SESSION["type"];
+    echo $_SESSION["username"];
+    echo $_SESSION["password"];
+    echo $_SESSION["email"];
+    echo $_SESSION["sex"];
+    echo $_SESSION["age"];
+    echo $_SESSION["weight"];
+    echo $_SESSION["allergy"];
+    echo $_SESSION["risk"];
 
+    echo $_SESSION["login"];
+?>
+</div>
 
 
 </body>
