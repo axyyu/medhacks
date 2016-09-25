@@ -105,7 +105,7 @@ session_start();
 </div>
 
 <!--Important Part-->
-<div>
+<div class="box">
     <?php
     echo $_SESSION["type"];
     echo $_SESSION["username"];

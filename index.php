@@ -7,6 +7,25 @@ if( $_SESSION["login"])
 
 ?>
 <html>
+
+<?php
+// Set session variables
+if(!empty($_POST['user'])) {
+    $_SESSION["type"] = $_POST['type'];
+    $_SESSION["username"] = $_POST["user"];
+    $_SESSION["password"] = $_POST["pass"];
+    $_SESSION["email"] = $_POST["email"];
+    $_SESSION["sex"] = $_POST["sex"];
+    $_SESSION["age"] = $_POST["Age"];
+    $_SESSION["weight"] = $_POST["Weight"];
+    $_SESSION["allergy"] = $_POST["Allergies"];
+    $_SESSION["risk"] = $_POST["Risks"];
+
+    $_SESSION["login"] = true;
+    print_r($_POST);
+}
+?>
+
 <head>
     <title>Doxtal</title>
     <!-- Sources -->
@@ -235,23 +254,7 @@ if( $_SESSION["login"])
     </div>
 </div>
 
-<?php
-// Set session variables
-if(isset($_POST['user'])) {
-    $_SESSION["type"] = $_POST['type'];
-    $_SESSION["username"] = $_POST["user"];
-    $_SESSION["password"] = $_POST["pass"];
-    $_SESSION["email"] = $_POST["email"];
-    $_SESSION["sex"] = $_POST["sex"];
-    $_SESSION["age"] = $_POST["Age"];
-    $_SESSION["weight"] = $_POST["Weight"];
-    $_SESSION["allergy"] = $_POST["Allergies"];
-    $_SESSION["risk"] = $_POST["Risks"];
 
-    $_SESSION["login"] = true;
-    print_r($_POST);
-}
-?>
 
 
 </body>
