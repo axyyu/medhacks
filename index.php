@@ -1,3 +1,11 @@
+<?php
+session_start();
+if( $_SESSION["login"])
+{
+    header("Location:accountinfo.php");
+}
+
+?>
 <html>
 <head>
     <title>Doxtal</title>
@@ -42,7 +50,7 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <h1 class = "title">doxtal.</h1>
-        <h1 class = "title"><b>me</b></h1> <!--FIX THIS-->
+        <h1 class = "title"><b>me&nbsp&nbsp&nbsp</b></h1> <!--FIX THIS-->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -58,26 +66,62 @@
                 <li><a href="diag.php">Diagnostic</a></li>
                 <li><a href="connect.php">Connect</a></li>
             </ul>
+            <?php if($_SESSION["login"]):?>
+                <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="history.php">History</a></li>
+                    <li><a href="messages.php">Messages</a></li>
+                  <li><a href="accountinfo.php">Account Info</a></li>
+                </ul>
+              </li>
+            </ul>
+            <?php else:?>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">
-                        <form>
+                        <form method="post">
                             <input type="text" name="username" placeholder="Username" required>
                             <input type="password" name="password" placeholder="Password" required>
                             <input type="submit" value="Login">
                         </form>
                     </a></li>
             </ul>
+            <?php endif ?>
         </div>
+        <div>
+            <?php
+                $tuser = $_POST["username"];
+                $tpass = $_POST["password"];
+                if( strcmp($tuser,$_SESSION["username"]))
+                {
+                    if(strcmp($tpass,$_SESSION["password"])) {
+                        $_SESSION["login"] = true;
+                        header("Location:accountinfo.php");
+                    }
+                    else
+                    {
+                        echo "<script>alert(\"Wrong Password!\");</script>";
+                    }
+                }
+                else
+                {
+                    echo "<script>alert(\"Wrong Username!\");</script>";
+                }
+            ?>
+            </div>>
+
     </div>
 </div>
 
 <div class="box2" id="boxx2">
     <img class = "logo" src="doxtal.png">
     <br>
-    <button class = "begin" id="signup">Get Started</button> <!--make a purpose for this -->
+    <h1 align="center" id="catchphrase">Connecting doctors and patients like never before.</h1>
+    <button class = "begin" id="signup">Get Started</button> <!--make a purpose  for this -->
 </div>
 
-<div id = "container">
+<div id = "container" style="display: none;">
     <div class = "box">
         <div id = "centerfracup">
             <div class = "box2">
@@ -87,9 +131,9 @@
                 </div>
                 <h1 style="font-size:22px">Sign Up</h1>
                 Account Type<br>
-                <form class="signUp">
+                <form class="signUp" id="continue_form" method="post">
                     <!-- Account Type<br> -->
-                    <select class="selectText" id="type">
+                    <select class="selectText" id="type" name="type">
                         <option>Patient</option>
                         <option>Doctor</option>
                     </select><br>
@@ -106,7 +150,7 @@
                         <input class="nodeinput signUpColor" type="email" name="email" placeholder="Email"><br>
                     </label><br>
                     <label>
-                        <input class="nodeinput signUpColor" id ="continue" type="submit" value="Continue">
+                        <input class="nodeinput signUpColor" id ="continue" type="submit" value="Next">
                     </label>
                 </form>
             </div>
@@ -115,59 +159,97 @@
 </div>
 
 
-<div id = "container2">
-    <div class = "box">
+<div id = "container2" style="display: none;">
+    <div class = "boxx">
         <div class = "select side" id="male">
-            <h1>Male</h1>
+            <div class="boxxx">
+                <h1>Male</h1>
+                <img class="pk" src="male.png" width="50" height="70">
+            </div>
         </div>
-
+        <div class = "bigspace side">
+            &nbsp&nbsp
+        </div>
         <div class = "select side"id="female">
-            <h2>Female</h2>
+            <div class="boxxx">
+                <h2>Female</h2>
+                <img class="pk" src="female.png" width="50" height="70">
+            </div>
+        </div>
+        <form method="post" style="display:none;">
+            <input id="chosex" name="sex" type="text">
+        </form>
+    </div>
+</div>
+
+<div id = "container3" style="display: none;">
+    <div class = "boxxxx">
+        <div class = "circle">
+            <div class = "box2">
+                <h1>Your age?</h1>
+                <br>
+                <form class = "stalone" method="post">
+                    <input class="nodeinput signUpColor" id="age" type="text" name="Age" placeholder="Age"autofocus>
+                </form>
+            </div>
         </div>
     </div>
 </div>
 
-<div id = "container3">
-    <div class = "box">
-            <h1>What is your age?</h1>
-            <br>
-        <form class = "stalone">
-            <input class="nodeinput signUpColor" id="age" type="text" name="Age" placeholder="Age">
-        </form>
+<div id = "container4" style="display: none;">
+    <div class = "boxxxx">
+        <div class = "circle">
+            <div class = "box2">
+                <h1>Your weight(lb)?</h1>
+                <br>
+                <form class = "stalone" method="post">
+                    <input class="nodeinput signUpColor" id="weight" type="text" name="Weight" placeholder="Weight" autofocus>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
-<div id = "container4">
-    <div class = "box">
-        <h1>What is your weight?</h1>
-        <br>
-        <form class = "stalone">
-            <input class="nodeinput signUpColor" id="weight" type="text" name="Weight" placeholder="Weight">
-        </form>
+<div id = "container5" style="display: none;">
+    <div class = "boxxxx">
+        <div class = "circle">
+            <div class = "box2">
+                <h1>Any allergies?</h1>
+                <br>
+                <form class = "stalone" method="post">
+                    <input class="nodeinput signUpColor" id="allergy" type="text" name="Allergies" placeholder="Allergies" autofocus>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
-<div id = "container5">
-    <div class = "box">
-        <h1>Do you have any allergies? If so, to what?</h1>
-        <br>
-        <form class = "stalone">
-            <input class="nodeinput signUpColor" id="allergy" type="text" name="Weight" placeholder="Weight">
-        </form>
+<div id = "container6" style="display: none;">
+    <div class = "boxxxx">
+        <div class = "circle">
+            <div class = "box2">
+                <h1>Any other risk factors?</h1>
+                <br>
+                <form class = "stalone" action="diag.html" method="post">
+                    <input class="nodeinput signUpColor" id="risk" type="text" name="Risks" placeholder="Risks" autofocus>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
-<div id = "container6">
-    <div class = "box">
-        <h1>Any other risk factors?</h1>
-        <br>
-        <form class = "stalone" action="diag.php">
-            <input class="nodeinput signUpColor" id="risk" type="text" name="Risks" placeholder="Risks">
-        </form>
-    </div>
-</div>
-
-
+<?php
+// Set session variables
+$_SESSION["type"] = $_POST['type'];
+$_SESSION["username"] = $_POST["user"];
+$_SESSION["password"] = $_POST["pass"];
+$_SESSION["email"] = $_POST["email"];
+$_SESSION["sex"] = $_POST["sex"];
+$_SESSION["age"] = $_POST["Age"];
+$_SESSION["weight"] = $_POST["Weight"];
+$_SESSION["allergy"] = $_POST["Allergies"];
+$_SESSION["risk"] = $_POST["Risks"];
+?>
 
 
 </body>

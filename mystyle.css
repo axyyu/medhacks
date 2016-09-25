@@ -196,6 +196,9 @@ body{
     position: fixed;
     /*transform: translateX(-50%);*/
 }
+<<<<<<< HEAD
+#centerf
+=======
 .contact11
 {
     position: relative;
@@ -233,6 +236,7 @@ body{
     /*transform: translateX(-50%);*/
 }
 #centerfrac
+>>>>>>> origin/master
 {
     display:flex;
     flex-direction: column;

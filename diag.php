@@ -1,10 +1,101 @@
+<?php
+session_start();
+
+?>
 <html>
 <head>
     <title>Doxtal</title>
     <!-- Sources -->
     <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
     <script src="resources/js/jquery.js"></script>
-    <script src="resources/js/dscripts.js"></script>
+    <!--     <script src="resources/js/diag.js"></script>
+     --><datalist id="symptoms">
+        <option value="Abdominal pain">
+        <option value="Back pain">
+        <option value="Chest pain">
+        <option value="Otalgia">
+        <option value="Headache">
+        <option value="Chronic pelvic pain">
+        <option value="Toothache">
+        <option value="Vaginal pain">
+        <option value="Rectal pain">
+        <option value="Dermatomal pain">
+        <option value="Chills">
+        <option value="Fever">
+        <option value="Paresthesia">
+        <option value="Light-headed">
+        <option value="Dizzy">
+        <option value="Dry mouth">
+        <option value="Nausea">
+        <option value="Sick">
+        <option value="Short of breath">
+        <option value="Sleepy">
+        <option value="Fatigue">
+        <option value="Sweaty">
+        <option value="Thirsty">
+        <option value="Tired">
+        <option value="Weak">
+        <option value="Hearing difficulty">
+        <option value="Urine issues">
+        <option value="Blurred vision">
+        <option value="Double vision">
+        <option value="Insomnia">
+        <option value="Difficulty of smell">
+        <option value="Excess sweat">
+        <option value="Speach impedament">
+        <option value="Swallow normally">
+        <option value="Balance">
+        <option value="Difficulty writing">
+        <option value="Pyrexia">
+        <option value="Loss of appetite">
+        <option value="Weight gain">
+        <option value="Muscle weakness">
+        <option value="Brusing">
+        <option value="Epistaxis">
+        <option value="Tremor">
+        <option value="Muscle cramps">
+        <option value="Convulsions">
+        <option value="Tinnitus">
+        <option value="Vertigo">
+        <option value="Passing out/Faintng (syncope)">
+        <option value="Hypothemia">
+        <option value="Hyperthemia">
+        <option value="Bleeding">
+        <option value="Discharge">
+        <option value="Swelling">
+        <option value="Deformity">
+        <option value="Depression">
+        <option value="Psychological symptom">
+        <option value="Paralysis">
+        <option value="Hallucination">
+        <option value="Confusion">
+        <option value="Paranoia">
+        <option value="Anxiety">
+        <option value="Anorexia">
+        <option value="Bloating">
+        <option value="Belching">
+        <option value="Constipation">
+        <option value="Diarrhea">
+        <option value="Vomiting">
+        <option value="Dysphagia">
+        <option value="Dyspepsia">
+        <option value="Vomiting of blood(haematemesis)">
+        <option value="Painful swallowing (odynophagia)">
+        <option value="Difficulty walking (claudication)">
+        <option value="Irregular heartbeat (palpitation)">
+        <option value="Abnormal heart rate">
+        <option value="Cough">
+        <option value="Sneeze">
+        <option value="Runny nose">
+        <option value="Blister">
+        <option value="Rash">
+        <option value="Itching">
+        <option value="Abrasion">
+        <option value="Laceration">
+        <option value="Wheezing">
+        <option value="Infertillity">
+    </datalist>
+    <script src="resources/js/scripts.js"></script>
     <script src="resources/js/bootstrap.js"></script>
     <script src="resources/js/npm.js"></script>
     <link rel="stylesheet" type="text/css" href="resources/css/mystyle.css">
@@ -22,8 +113,10 @@
         };
         firebase.initializeApp(config);
     </script>
+
 </head>
 <body>
+
 <!--
     <div id = "header">
         <div id = "logo">
@@ -52,19 +145,53 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
-                <li ><a href="index.php">Home</a></li>
+                <li ><a href="index.html">Home</a></li>
                 <li class="active"><a href="#">Diagnostic</a></li>
-                <li><a href="connect.php">Connect</a></li>
+                <li><a href="connect.html">Connect</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">
-                        <form>
-                            <input type="text" name="username" placeholder="Username" required>
-                            <input type="password" name="password" placeholder="Password" required>
-                            <input type="submit" value="Login">
-                        </form>
-                    </a></li>
-            </ul>
+            <?php if($_SESSION["login"]):?>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="history.php">History</a></li>
+                            <li><a href="messages.php">Messages</a></li>
+                            <li><a href="accountinfo.php">Account Info</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <?php else:?>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">
+                            <form method="post">
+                                <input type="text" name="username" placeholder="Username" required>
+                                <input type="password" name="password" placeholder="Password" required>
+                                <input type="submit" value="Login">
+                            </form>
+                        </a></li>
+                </ul>
+                <div>
+                    <?php
+                    $tuser = $_POST["username"];
+                    $tpass = $_POST["password"];
+                    if( strcmp($tuser,$_SESSION["username"]))
+                    {
+                        if(strcmp($tpass,$_SESSION["password"])) {
+                            $_SESSION["login"] = true;
+                            header("Location:accountinfo.php");
+                        }
+                        else
+                        {
+                            echo "<script>alert(\"Wrong Password!\");</script>";
+                        }
+                    }
+                    else
+                    {
+                        echo "<script>alert(\"Wrong Username!\");</script>";
+                    }
+                    ?>
+                </div>>
+            <?php endif ?>
         </div>
     </div>
 </div>
@@ -75,55 +202,218 @@
         <div id = "centerfrac">
             <div class = "box2">
                 <div id = "symplist">
-                    <ul>
+                    <ul id = "symul">
                     </ul>
                 </div>
-                <p id = "symp">Enter your symptom here:</p>
-                <form method="post">
-                <input class = "nodeinput" type="text" name="symptom">
-                    </form>
-                <br class="buttonbreak">
+                <div id="inpbox">
+                    <p id = "symp">Enter your symptom here:</p>
+                    <input id="symtext" class = "nodeinput" type="text" name="symptom" list="symptoms">
+                    <br class="buttonbreak">
+                </div>
                 <button id = "plus">+</button>
+            </div>
+        </div>
+    </div>
+    <div class="disease1" style="display: none;">
+        <div id="frac2">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Death <br>
+                The state of not being alive
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand1">+</button>
+            </div>
+        </div>
+    </div>
+    <div class="disease2" style="display: none;">
+        <div id="frac2">
+            <div class="dname1">
+                <div id = "dinfo2">
+
+                </div>
+                Life <br>
+                The state of not being dead
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand2">+</button>
+            </div>
+        </div>
+    </div>
+    <div class="disease3" style="display: none;">
+        <div id="frac2">
+            <div class="dname1">
+                <div id = "dinfo1">
+                </div>
+                Freshman <br>
+                The state of not being shafted
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand3">+</button>
+            </div>
+        </div>
+    </div>
+    <div class="disease4" style="display: none;">
+        <div id="frac2">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Junior <br>
+                The state of being shafted
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand4">+</button>
+            </div>
+        </div>
+    </div>
+    <div class="disease5" style="display: none;">
+        <div id="frac2">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Sophomore <br>
+                The state of being try-hard
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand5">+</button>
+            </div>
+        </div>
+    </div>
+    <div class="disease6" style="display: none;">
+        <div id="frac2">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Senior <br>
+                The state of being a slacker
+                <br class="buttonbreak">
+                <button class="diseasebut"id = "expand6">+</button>
+            </div>
+        </div>
+    </div>
+    <div class="contact1" id="1" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Contact a doctor
+            </div>
+        </div>
+    </div>
+    <div class="contact2" id="2" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Prescription
+            </div>
+        </div>
+    </div>
+    <div class="contact3" id="3" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Contact a doctor
+            </div>
+        </div>
+    </div>
+    <div class="contact4" id="4" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Prescription
+            </div>
+        </div>
+    </div>
+    <div class="contact5" id="5" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Contact a doctor
+            </div>
+        </div>
+    </div>
+    <div class="contact6" id="6" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Prescription
+            </div>
+        </div>
+    </div>
+    <div class="contact7" id="9" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Contact a doctor
+            </div>
+        </div>
+    </div>
+    <div class="contact8" id="10" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Prescription
+            </div>
+        </div>
+    </div>
+    <div class="contact9" id="7" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Contact a doctor
+            </div>
+        </div>
+    </div>
+    <div class="contact10" id="8" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Prescription
+            </div>
+        </div>
+    </div>
+    <div class="contact11" id="11" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Contact a doctor
+            </div>
+        </div>
+    </div>
+    <div class="contact12" id="12" style="display: none;">
+        <div id="frac3">
+            <div class="dname1">
+                <div id = "dinfo1">
+
+                </div>
+                Prescription
             </div>
         </div>
     </div>
 </div>
 
-<?php
-
-    $symptom = $_POST['symptom'];
-    //$curl = curl_init("https://api.infermedica.com/v2/search?phrase=headache");
-    /*
-    $curl = curl_init();
-    // Set some options - we are passing in a useragent too here
-    curl_setopt_array($curl, array(
-    CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'https://api.infermedica.com/v2/search?phrase='.$symptom,
-    CURLOPT_USERAGENT => 'Test Request',
-    APP_ID => '88252933',
-        app_id => '88252933',
-    APP_KEY => 'dd0c08c097535c3dfc37c8a18aa7e938',
-        app_key => 'dd0c08c097535c3dfc37c8a18aa7e938'
-    ));
-    // Send the request & save response to $resp
-    $resp = curl_exec($curl);
-    // Close request to clear up some resources
-    curl_close($curl);
-
-    echo "<p>".$resp."</p>";
-    */
-    //$cmd='curl -v -H\'app_id: 88252933\' -H\'app_key: dd0c08c097535c3dfc37c8a18aa7e938\' https://api.infermedica.com/v2/info';
-    $cmd = 'curl -X GET --header \"Accept: application/json\" --header \"app_id: 88252933\" --header \"app_key: dd0c08c097535c3dfc37c8a18aa7e938\" \"https://api.infermedica.com/v2/symptoms\"';
-    //$cmd = 'curl -X GET --header \"Accept: application/json\" --header \"app_id: 88252933\" --header \"app_key: dd0c08c097535c3dfc37c8a18aa7e938\" \"https://api.infermedica.com/v2/search?phrase=headache\"';
-    exec($cmd,$result);
-
-    echo '<pre>';
-        print_r($result);
-    echo '</pre>';
-
-?>
 
 
 </body>
-
 </html>
