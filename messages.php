@@ -8,7 +8,7 @@ session_start();
 <head>
     <title> OpenTok Getting Started </title>
     <link href="/css/app.css" rel="stylesheet" type="text/css">
-    <script src="https://static.opentok.com/v2/js/opentok.js"></script>
+    <script src="resources/js/mess.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
@@ -39,7 +39,7 @@ session_start();
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="history.php">History</a></li>
-                            <li><a href="../../messages.php">Messages</a></li>
+                            <li><a href="messages.php">Messages</a></li>
                             <li><a href="#"><b>Account Info</b></a></li>
                         </ul>
                     </li>
@@ -59,13 +59,7 @@ session_start();
     </div>
 </div>
 
-<div id="videos">
-    <div id="subscriber"></div>
-    <div id="publisher"></div>
-</div>
 
-<script type="text/javascript" src="/js/config.js"></script>
-<script type="text/javascript" src="/js/app.js"></script>
 </body>
 
 </html>

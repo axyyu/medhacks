@@ -1302,3 +1302,8 @@ label{
     height: 200px;
     border-radius: 200px;
 }
+.cbox
+{
+    height: 1%;
+    width: 1%;
+}

@@ -147,7 +147,7 @@ session_start();
             <ul class="nav navbar-nav navbar-left">
                 <li ><a href="index.php">Home</a></li>
                 <li class="active"><a href="#">Diagnostic</a></li>
-                <li><a href="connectt.php">Connect</a></li>
+                <li><a href="connectt.php" target="_blank">Connect</a></li>
             </ul>
             <?php if($_SESSION["login"]):?>
                 <ul class="nav navbar-nav navbar-right">

@@ -64,7 +64,7 @@ session_start();
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="#">Home</a></li>
                 <li><a href="diag.php">Diagnostic</a></li>
-                <li><a href="connectt.php">Connect</a></li>
+                <li><a href="connectt.php" target="_blank">Connect</a></li>
             </ul>
             <?php if($_SESSION["login"]):?>
                 <ul class="nav navbar-nav navbar-right">
@@ -113,14 +113,24 @@ session_start();
             <h2>Cancer</h2> <br>
         </div>
         <div id = "dinfo1">
+            <form method="post">
+                <?php
+                    if($_SESSION["cancer"])
+                    {
+                        echo "<input class = \"cbox\" type=\"checkbox\" name=\"cancer\" value=\"Cancer\" checked>";
+                    }
+                    else
+                    {
+                        echo "<input class = \"cbox\" type=\"checkbox\" name=\"cancer\" value=\"Cancer\">";
+                    }
+                ?>
+                <br>
+
+            </form>
             <?php
-                if(strpos($_SESSION["risk"], 'cancer') !== false)
+                if(!empty($_POST["cancer"]))
                 {
-                    echo "<b>Yes</b>";
-                }
-                else
-                {
-                    echo "None";
+                    $_SESSION["cancer"] = true;
                 }
 
             ?>
@@ -135,14 +145,24 @@ session_start();
 
         </div>
         <div id = "dinfo1">
+            <form method="post">
+                <?php
+                if($_SESSION["diabetes"])
+                {
+                    echo "<input class = \"cbox\" type=\"checkbox\" name=\"diabetes\" value=\"Diabetes\" checked>";
+                }
+                else
+                {
+                    echo "<input class = \"cbox\" type=\"checkbox\" name=\"diabetes\" value=\"Diabetes\">";
+                }
+                ?>
+                <br>
+
+            </form>
             <?php
-            if(strpos($_SESSION["risk"], 'diabetes') !== false)
+            if(!empty($_POST["diabetes"]))
             {
-                echo "<b>Yes</b>";
-            }
-            else
-            {
-                echo "None";
+                $_SESSION["diabetes"] = true;
             }
 
             ?>
@@ -157,14 +177,24 @@ session_start();
 
         </div>
         <div id = "dinfo1">
+            <form method="post">
+                <?php
+                if($_SESSION["heart"])
+                {
+                    echo "<input class = \"cbox\" type=\"checkbox\" name=\"heart\" value=\"Heart\" checked>";
+                }
+                else
+                {
+                    echo "<input class = \"cbox\" type=\"checkbox\" name=\"heart\" value=\"Heart\">";
+                }
+                ?>
+                <br>
+
+            </form>
             <?php
-            if(strpos($_SESSION["risk"], 'heart') !== false)
+            if(!empty($_POST["heart"]))
             {
-                echo "<b>Yes</b>";
-            }
-            else
-            {
-                echo "None";
+                $_SESSION["heart"] = true;
             }
 
             ?>
@@ -178,14 +208,24 @@ session_start();
             <h2>Obesity</h2><br>
         </div>
         <div id = "dinfo1">
+            <form method="post">
+                <?php
+                if($_SESSION["obesity"])
+                {
+                    echo "<input class = \"cbox\" type=\"checkbox\" name=\"obesity\" value=\"Obese\" checked>";
+                }
+                else
+                {
+                    echo "<input class = \"cbox\" type=\"checkbox\" name=\"obesity\" value=\"Obese\">";
+                }
+                ?>
+                <br>
+
+            </form>
             <?php
-            if(strpos($_SESSION["risk"], 'obes') !== false)
+            if(!empty($_POST["obesity"]))
             {
-                echo "<b>Yes</b>";
-            }
-            else
-            {
-                echo "None";
+                $_SESSION["obesity"] = true;
             }
 
             ?>

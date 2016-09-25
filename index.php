@@ -67,7 +67,7 @@ if( $_SESSION["login"])
             <ul class="nav navbar-nav navbar-left">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="diag.php">Diagnostic</a></li>
-                <li><a href="connectt.php">Connect</a></li>
+                <li><a href="connectt.php" target="_blank">Connect</a></li>
             </ul>
             <?php if($_SESSION["login"]):?>
                 <ul class="nav navbar-nav navbar-right">
