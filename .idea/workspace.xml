@@ -26,7 +26,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
+            <state relative-caret-position="1309">
               <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
               <folding />
             </state>
@@ -36,7 +36,7 @@
       <file leaf-file-name="doctors.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doctors.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
+            <state relative-caret-position="1088">
               <caret line="64" column="64" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
               <folding />
             </state>
@@ -66,7 +66,7 @@
       <file leaf-file-name="accountinfo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accountinfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="935">
               <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
               <folding />
             </state>
@@ -76,7 +76,7 @@
       <file leaf-file-name="diag.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diag.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
+            <state relative-caret-position="5202">
               <caret line="306" column="28" selection-start-line="306" selection-start-column="28" selection-end-line="306" selection-end-column="28" />
               <folding />
             </state>
@@ -87,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/resources/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="337">
-              <caret line="109" column="7" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
+              <caret line="109" column="15" selection-start-line="109" selection-start-column="15" selection-end-line="109" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -208,7 +208,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -401,6 +400,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -506,17 +506,18 @@
       <workItem from="1474798024048" duration="9485000" />
       <workItem from="1474807666334" duration="1970000" />
       <workItem from="1474809704715" duration="616000" />
+      <workItem from="1474810371710" duration="75000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72764000" />
+    <option name="totallyTimeSpent" value="72839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13412017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13519314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -766,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,7 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="29" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -882,7 +878,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
+        <state relative-caret-position="1309">
           <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
           <folding />
         </state>
@@ -906,7 +902,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/doctors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
+        <state relative-caret-position="1088">
           <caret line="64" column="64" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
           <folding />
         </state>
@@ -930,7 +926,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/accountinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="935">
           <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
           <folding />
         </state>
@@ -938,7 +934,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/diag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
+        <state relative-caret-position="5202">
           <caret line="306" column="28" selection-start-line="306" selection-start-column="28" selection-end-line="306" selection-end-column="28" />
           <folding />
         </state>
@@ -947,7 +943,7 @@
     <entry file="file://$PROJECT_DIR$/resources/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
-          <caret line="109" column="7" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
+          <caret line="109" column="15" selection-start-line="109" selection-start-column="15" selection-end-line="109" selection-end-column="15" />
           <folding />
         </state>
       </provider>

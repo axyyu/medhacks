@@ -107,7 +107,7 @@ $(document).ready(function()
     });
   for( i = 0; i<13; i++)
   {
-    if(i%2=0)
+    if( (i%2)==0)
     {
       $(".contact"+i).click(function()
       {
