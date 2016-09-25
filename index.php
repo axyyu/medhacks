@@ -13,7 +13,6 @@ if( $_SESSION["login"])
 <head>
     <title>Doxtal</title>
     <!-- Sources -->
-    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
     <script src="resources/js/jquery.js"></script>
     <script src="resources/js/home.js"></script>
     <script src="resources/js/bootstrap.js"></script>
@@ -22,19 +21,6 @@ if( $_SESSION["login"])
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap-theme.css">
     <link rel="stylesheet" type="text/css" href="resources/css/mystyle.css">
 
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyDifaAcxog3tTMMvQoLz1leAr_Vh9Uq9Ms",
-            authDomain: "webhacks-caade.firebaseapp.com",
-            databaseURL: "https://webhacks-caade.firebaseio.com",
-            storageBucket: "",
-            messagingSenderId: "267096838240"
-        };
-        firebase.initializeApp(config);
-
-
-    </script>
 </head>
 <body>
 <!--
