@@ -2,7 +2,7 @@
 session_start();
 if( $_SESSION["login"])
 {
-    header("Location:accountinfo.php");
+
 }
 
 ?>
@@ -260,6 +260,7 @@ if( $_SESSION["login"])
     $_SESSION["risk"] = $_POST["Risksy"];
 
     $_SESSION["login"] = true;
+    header("Location:accountinfo.php");
     ?>
 </div>
 
