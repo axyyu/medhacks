@@ -58,6 +58,7 @@ function checkFunction(boo)
     $(".disease6").fadeOut(2000);
     $(".disease4").fadeOut(2000);
     $('#inpbox').val('');
+    document.getElementById("symtext").value = "";
     $("#inpbox").show();
     bootest=true;
   }
