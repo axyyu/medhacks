@@ -138,10 +138,10 @@ if( $_SESSION["login"])
                         <input class="nodeinput signUpColor" type="text" name="user" placeholder="Username"><br>
                     </label>
                     <label>
-                        <input class="nodeinput signUpColor" type="text" name="pass" placeholder="Password"><br>
+                        <input class="nodeinput signUpColor" type="password" name="pass" placeholder="Password"><br>
                     </label>
                     <label>
-                        <input class="nodeinput signUpColor" type="text" name="confirm" placeholder="Confirm Password"><br>
+                        <input class="nodeinput signUpColor" type="password" name="confirm" placeholder="Confirm Password"><br>
                     </label>
                     <label>
                         <input class="nodeinput signUpColor" type="email" name="email" placeholder="Email"><br>
@@ -237,7 +237,7 @@ if( $_SESSION["login"])
 
 <?php
 // Set session variables
-if(isset($_POST['Allergies'])) {
+if(isset($_POST['user'])) {
     $_SESSION["type"] = $_POST['type'];
     $_SESSION["username"] = $_POST["user"];
     $_SESSION["password"] = $_POST["pass"];
