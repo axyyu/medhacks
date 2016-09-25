@@ -515,6 +515,15 @@ body{
         
 text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
+.ddd2
+{
+    position: relative;
+    top:45%;
+    transform: translateY(-60%);
+    text-align: center;
+        
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
 .dname1
 {
     position: relative;
@@ -921,6 +930,18 @@ body{
     >>>>>>> refs/remotes/origin/Edward*/
 
 }
+#frac4
+{
+    display:flex;
+    flex-direction: column;
+    opacity:.75;
+    background-color: #1b6d85;
+    color:white;
+
+    width:600px;
+    height: 600px;
+    border-radius: 600px;
+}
 .pick
 {
     font-weight: bold;
@@ -1145,6 +1166,15 @@ body{
     top:52%;
     transform: translateY(-50%);
     left:20%;
+    position: fixed;
+    /*transform: translateX(-50%);*/
+}
+.disease1b
+{
+    position: relative;
+    top:52%;
+    transform: translateY(-50%);
+    left:-20%;
     position: fixed;
     /*transform: translateX(-50%);*/
 }
