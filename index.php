@@ -88,10 +88,10 @@ if( $_SESSION["login"])
                             $_SESSION["login"] = true;
                             header("Location:accountinfo.php");
                         } else {
-                            echo "<script>alert(\"Wrong Password!\");</script>";
+                            echo "Wrong Password!";
                         }
                     } else {
-                        echo "<script>alert(\"Wrong Username!\");</script>";
+                        echo "Wrong Username!";
                     }
                 }
             ?>

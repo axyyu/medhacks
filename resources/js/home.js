@@ -35,6 +35,7 @@ $(document).ready(function(){
         $("#container6").hide();
         $("#container2").show();
         $("#boxx2").hide();
+        $("#boxx2").attr("style", "display:none");
         return false;
     });
     $("#male").click(function()
