@@ -1513,13 +1513,6 @@ body{
       font-size: 20px;
       color: deepskyblue;
 }
-.signUp{
-<<<<<<< HEAD
-color: #046bbf; 
-=======
-color: #046bbf;
->>>>>>> refs/remotes/origin/master
-}
 .signUpColor::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: white;
 }
@@ -1577,6 +1570,6 @@ label{
 }
 .cbox
 {
-    height: 1%;
-    width: 1%;
+    height: 20%;
+    width: 20%;
 }
