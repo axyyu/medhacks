@@ -122,8 +122,9 @@ function checkFunction(boo)
     $(".disease3").fadeIn(1500);
     $(".disease2").fadeIn(2000);
     $(".disease6").fadeIn(2000);
-    if(map[s][5]!='undefined')
-    $(".disease4").fadeIn(2000);
+    if(map[s][5]!='undefined') {
+      $(".disease4").fadeIn(2000);
+    }
     $("#inpbox").hide();
   
     var list = document.getElementById("symul");
